@@ -28,7 +28,7 @@
                                 <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                             </form>
                             <div class="login-help">
-                                <a href="\register.php">Registrierung</a> - <a href="#">Passwort vergessen</a>
+                                <a href="register.php">Registrierung</a> - <a href="#">Passwort vergessen</a>
                             </div>
                         </div>
                     </div>
