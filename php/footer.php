@@ -1,5 +1,5 @@
-</div>
-<!--Footer mit Facebook, FAQ, Impressum-->
+
+<!--Footer mit Facebook, FAQ, Impressum - wird in die normalen Seiten durch include eingebunden-->
 <footer class="container-fluid">
     <div class="row">
 

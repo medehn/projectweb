@@ -1,4 +1,4 @@
-<!-- Logo, Header-Bild-->
+<!-- Logo, Header-Bild - wird in die normalen Seiten durch include eingebunden-->
 
 <div id="container">
     <div class="container-fluid">

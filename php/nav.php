@@ -1,5 +1,4 @@
-
-<!-- Navigation-->
+<!-- Navigation - wird in die normalen Seiten durch include eingebunden-->
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -29,7 +28,7 @@
                                 <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                             </form>
                             <div class="login-help">
-                                <a href="#">Registrierung</a> - <a href="#">Passwort vergessen</a>
+                                <a href="\register.php">Registrierung</a> - <a href="#">Passwort vergessen</a>
                             </div>
                         </div>
                     </div>
