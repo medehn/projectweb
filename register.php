@@ -21,7 +21,6 @@ include('php\header.php')
         <div class="col-sm-2 sidenav">
             <p><a href="profile.php">Mein Profil</a></p>
             <p><a href="events.php">Anmeldung Lager</a></p>
-            <p><a href="#">Link</a></p>
         </div>
         <div class="col-sm-6 text-left">
             <div class="container">
@@ -58,10 +57,23 @@ include('php\header.php')
                                         <input type="date" placeholder="" class="form-control">
                                     </div>
                                 </div>
-                                    <div class="form-group">
-                                        <label>Email Addresse*</label>
+                                <div class="form-group">
+                                    <label>Email Addresse*</label>
+                                    <input type="text" placeholder="" class="form-control" required>
+                                </div>
+                                    <br>
+                                    <hr>
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <label>Username</label>
                                         <input type="text" placeholder="" class="form-control" required>
                                     </div>
+                                    <div class="col-sm-6 form-group">
+                                        <label>Passwort*</label>
+                                        <input type="text" placeholder="" class="form-control" required>
+                                    </div>
+                                </div>
+
                                 <br>
                                 <hr>
                                 <div class="row">
@@ -71,16 +83,29 @@ include('php\header.php')
                                     </div>
 
                                 </div>
-                                <div class="form-group">
+                                <div class="row">
+                                <div class="col-sm-6 form-group" >
                                     <label>Fähigkeiten</label>
                                     <input type="text" placeholder="" class="form-control">
                                 </div>
 
-                                <div class="form-group">
+                                <div class="col-sm-6 form-group" >
                                     <label>Interessen</label>
                                     <input type="text" placeholder="" class="form-control">
+                                <br>
+                                    <hr>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-info">Absenden</button>
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <h2>  <div class="text-center">
+                                                    <button type="button" class="btn btn-labeled btn-success">
+                                                        <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden</button>
+
+                                                    <br /></h2>
+                                        </div>
+                                    </div>
+                            </div>
                             </div>
                         </form>
                     </div>

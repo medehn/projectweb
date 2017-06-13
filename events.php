@@ -20,7 +20,6 @@ include('php\header.php')
             <div class="col-sm-2 sidenav">
                 <p><a href="profile.php">Mein Profil</a></p>
                 <p><a href="events.php">Anmeldung Lager</a></p>
-                <p><a href="#">Link</a></p>
             </div>
             <div class="col-sm-6 text-left">
                 <form class="form-horizontal">

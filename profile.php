@@ -22,7 +22,6 @@ include('php\header.php')
             <div class="col-sm-2 sidenav">
                 <p><a href="profile.php">Mein Profil</a></p>
                 <p><a href="events.php">Anmeldung Lager</a></p>
-                <p><a href="#">Link</a></p>
             </div>
             <br> <br>
             <div class="col-sm-4 img-rounded"><img class src="img\profile.jpg"> </div>

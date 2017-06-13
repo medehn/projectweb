@@ -151,3 +151,11 @@ footer .row::after {
   float: right;
   padding-right: 1%;
   padding-left: 1%; }
+
+/* line 164, ../sass/main.scss */
+a {
+  color: #777; }
+
+/* line 167, ../sass/main.scss */
+a:focus, a:hover {
+  color: #777; }

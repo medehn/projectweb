@@ -21,9 +21,8 @@ include('php\header.php')
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <p><a href="profile.php">Mein Profil</a></p>
-            <p><a href="events.php">Anmeldung Lager</a></p>
-            <p><a href="#">Link</a></p>
+            <p><a href="profile.php" id="navlink">Mein Profil</a></p>
+            <p><a href="events.php"  id="navlink">Anmeldung Lager</a></p>
         </div>
         <div class="col-sm-6 text-left">
             <h1>Welcome</h1>

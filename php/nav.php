@@ -10,14 +10,14 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="../index.php">Home</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="#">Verein</a></li>
                 <li><a href="#">Mitglieder</a></li>
-                <li><a href="e">Veranstaltungen</a></li>
+                <li><a href="#">Veranstaltungen</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!-- Login mit Lightbox-->
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"data-toggle="modal"data-target="#login-modal">Login</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"data-toggle="modal"data-target="#login-modal">  Login</span></a></li>
                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
                         <div class="loginmodal-container">
