@@ -6,7 +6,7 @@
     <title>Rabenbund zu Landeck</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
@@ -23,56 +23,126 @@ include('php\header.php')
                 <p><a href="#">Link</a></p>
             </div>
             <div class="col-sm-6 text-left">
-                <form action="contact.php">
-                    <h2>Anmeldung Mittelalterlager</h2>
-                    Name
-                    <br>
-                    <input type = "text"
-                           placeholder="Name">
-                    <br><br>
-                    Lager (Ehrenberg, Schluderns, ...)
-                    <br>
-                    <input type = "text"
-                           placeholder="Lager">
-                    <br><br>
-                    Wieviele Tage?
-                    <br>
-                    <input type = "radio" value="2" id="2">
-                    <label for="2">2</label>
-                    <br>
-                    <input type = "radio" value="3" id="3">
-                    <label for="3">3</label>
-                    <br>
-                    <input type = "radio" value="4" id="4">
-                    <label for="4">4</label>
-                    <br><br>
-                    Eigenes Zelt?
-                    <br>
-                    <input type = "radio" value="ja" id="zeltja">
-                    <label for="zeltja">ja</label>
-                    <br>
-                    <input type = "radio" value="nein" id="zeltnein">
-                    <label for="zeltnein">nein</label>
-                    <br><br>
+                <form class="form-horizontal">
+                    <fieldset>
 
-                    Eigenes Auto?
-                    <br>
-                    <input type = "radio" value="ja" id="autoja">
-                    <label for="autoja">ja</label>
-                    <br>
-                    Falls ja, bitte angeben: Welches Auto (Anhängerkupplung, klein oder groß), Freie Sitzplätze, schon ausgemachte Mitfahrer
-                    <br>
-                    <input type = "text">
-                    <br>
-                    <input type = "radio" value="nein" id="autonein">
-                    <label for="autonein">nein</label>
-                    <br><br>
+                        <!-- Formular Name -->
+                        <legend>Anmeldung Lager</legend>
 
-                    Infos, Anmerkungen, Wünsche
-                    <br>
-                    <input type = "text">
-                    <br><br>
-                    <input type="Submit" name="absenden" value="absenden">
+                        <!-- Name-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Name</label>
+                            <div class="col-md-4">
+                                <input id="name" name="name" type="text" placeholder="Vorname Nachname" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Email Adresse-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="emailaddress">Email Addresse</label>
+                            <div class="col-md-4">
+                                <input id="emailaddress" name="emailaddress" type="text" placeholder="Email Adresse" class="form-control input-md" required="">
+                            </div>
+
+                        <!-- Event-->
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Event</label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Event (Ehrenberg, Schluderns, ..." class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Wieviele Tage? -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Tage</label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Eigenes Zelt?-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Eigenes Zelt</label>
+                            <div class="col-md-4">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio"  value="1" checked="checked">
+                                       Ja
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio"value="2">
+                                        Nein
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Eigenes Auto?-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Eigenes Auto</label>
+                            <div class="col-md-4">
+                                <div class="radio">
+                                    <label">
+                                        <label>
+                                            <input type="radio"  value="1" checked="checked">
+                                        Ja
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio"value="2">
+                                        Nein
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Eigenes Auto-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Platz im Auto für wieviele Personen?</label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option value="2">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="2">3</option>
+                                    <option value="2">mehr</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Auto-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"> Bei Auto: zB Anhängerkupplung, Platz für Equipment, Mitfahrer....</label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+
+                            <!-- Sonstiges-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="hotel">Infos, Wünsche, Anmerkungen?</label>
+                                <div class="col-md-4">
+                                    <input type="text" placeholder="" class="form-control input-md">
+
+                                </div>
+                            </div>
+                    </fieldset>
+                    <div class="container">
+                        <div class="row">
+                            <h2>  <div class="text-center">
+                                    <button type="button" class="btn btn-labeled btn-success">
+                                        <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden</button>
+
+                                    <br /></h2>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
