@@ -10,66 +10,16 @@
 
 </head>
 <body>
-<!-- Navigation-->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">Verein</a></li>
-                <li><a href="#">Mitglieder</a></li>
-                <li><a href="#">Veranstaltungen</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Login mit Lightbox-->
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"data-toggle="modal"data-target="#login-modal">Login</span></a></li>
-                <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                    <div class="modal-dialog">
-                        <div class="loginmodal-container">
-                            <h1>Einloggen</h1><br>
-                            <form>
-                                <input type="text" name="user" placeholder="Username">
-                                <input type="password" name="pass" placeholder="Password">
-                                <input type="submit" name="login" class="login loginmodal-submit" value="Login">
-                            </form>
-                            <div class="login-help">
-                                <a href="#">Registrierung</a> - <a href="#">Passwort vergessen</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </ul>
-        </div>
-    </div>
-</nav>
-<ol class="breadcrumb">
-    <li><a href="index.html">Home</a></li>
-    <li class="active">Anmeldung Lager</li>
-</ol>
-<!-- Logo, Header-Bild-->
-<div id="container">
-    <div class="container-fluid">
-
-        <div id="logo" class="col-sm-2 text-center">
-            <img class =logoImg src="img\logo.jpg" alt="Logo">
-        </div>
-        <div id = "header1" class="col-sm-10 text-center">
-            <img class =headerImg src="img\header.jpg" alt="Header">
-        </div>
-    </div>
+<?php
+include('php\nav.php');
+include('php\header.php')
+?>
     <!--Seiten-Navigation-->
     <div class="container-fluid text-center">
         <div class="row content">
             <div class="col-sm-2 sidenav">
-                <p><a href="profile.html">Mein Profil</a></p>
-                <p><a href="events.html">Anmeldung Lager</a></p>
+                <p><a href="profile.php">Mein Profil</a></p>
+                <p><a href="events.php">Anmeldung Lager</a></p>
                 <p><a href="#">Link</a></p>
             </div>
             <div class="col-sm-6 text-left">
@@ -129,16 +79,9 @@
     </div>
 </div>
 <!--Footer mit Facebook, FAQ, Impressum-->
-<footer class="container-fluid">
-    <div class="row">
-
-        <p class="imprint"><button type="button" class="btn btn-default">Impressum</button></p>
-        <p class="faq"><button type="button" class="btn btn-default">FAQ</button></p>
-        <p class="facebook" ><i style="font-size:24px" class="fa">&#xf09a;</i></p>
-
-
-    </div>
-</footer>
+<?php
+include('php\footer.php')
+?>
 <!-- Scripte für Bootstrap-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
