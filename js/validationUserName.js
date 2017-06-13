@@ -3,11 +3,16 @@
  */
 function userName_validation (username){
 
-    var username_length = username.value.length;
-    if (username != 0){
+    var letters = /^[A-Za-z]+$/;
+    if (username != 0 && username.value.match(letters)){
 
         return true;
 
+    } else {
+
+        alert('Username darf nur Buchstaben haben');
+        username.focus();
+        return false;
     }
 
 }
