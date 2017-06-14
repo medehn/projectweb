@@ -16,7 +16,7 @@ include('php\nav.php');
 include('php\header.php')
 ?>
 <!--Seiten-Navigation-->
-<div class="container-fluid text-center">
+<div class="container-fluid">
     <div class="row content">
         <div class="col-sm-2 sidenav">
             <p><a href="profile.php">Mein Profil</a></p>
@@ -26,18 +26,16 @@ include('php\header.php')
             <div class="container">
                 <h1 class="well">Passwort vergessen?</h1>
             </div>
-            <div class="col-sm-12 ">
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <label>Deine Email Adresse</label>
-                        <input type="text" placeholder="Email Adresse" class="form-control" required>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 form-group text-center">
-                <!-- Lightbox fürs Passwort vergessen bestätigen-->
+        <div class="col-sm-8">
+            <div class="container">
+                    <label>Deine Email Adresse</label>
+                    <input type="text" placeholder="Email Adresse" class="form-control" required>
+            </div>
+            <br>
+        </div>
+            <div class="col-sm-8">
+                <div class="container" </div>
                 <button type="button" class="btn btn-labeled btn-success"
                         data-toggle="modal" data-target="#myModal">Absenden
                 </button>
