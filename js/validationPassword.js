@@ -1,7 +1,7 @@
 /**
  * Created by Anni on 13.06.17.
  */
-function Checker (wrapperId, passwordInputFieldId, passwordSubmitButtonId){
+/*function Checker (wrapperId, passwordInputFieldId, passwordSubmitButtonId){
 
 
     //erfolgreiche Passwortvergabe, bzw Error wenn nicht passend
@@ -56,4 +56,4 @@ function Checker (wrapperId, passwordInputFieldId, passwordSubmitButtonId){
 
 
 
-}
+} */

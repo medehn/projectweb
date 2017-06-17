@@ -1,7 +1,7 @@
 /**
  * Created by Anni on 13.06.17.
  */
-function userName_validation (username){
+/*function userName_validation (username){
 
     var letters = /^[A-Za-z]+$/;
     if (username != 0 && username.value.match(letters)){
@@ -15,4 +15,4 @@ function userName_validation (username){
         return false;
     }
 
-}
+}*/

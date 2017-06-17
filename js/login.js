@@ -1,7 +1,7 @@
 /**
  * Created by Anni on 13.06.17.
  */
-jQuery(document).ready(function() {
+/*jQuery(document).ready(function() {
 
     var registerModal = $('#registerModal');
 
@@ -93,4 +93,4 @@ jQuery(document).ready(function() {
 
 
 
-});
+})*/

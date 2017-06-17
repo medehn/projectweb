@@ -1,7 +1,7 @@
 /**
  * Created by Anni on 13.06.17.
  */
-function validation_email(uemail){
+/*function validation_email(uemail){
 
     var formatformail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
@@ -12,4 +12,4 @@ function validation_email(uemail){
         uemail.focus();
         return false;
     }
-}
+} */

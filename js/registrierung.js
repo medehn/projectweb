@@ -2,8 +2,6 @@
  * Created by Anni on 13.06.17.
  */
 
-
-
 function formValidation() {
 
     var passid = document.registration.passid;
@@ -12,7 +10,7 @@ function formValidation() {
     var uemail = document.registration.email;
 
 
-        if (password_validation(passid,6)) {
+        if (password_validation(passid, 6)) {
             if (userName_validation(username)) {
                 if (addressnotempty(useradd)) {
                     if (validation_email(uemail)) {
@@ -24,12 +22,11 @@ function formValidation() {
 
     return false;
 }
-
-
+    // Vorraussetzungen für das Passwort, mindestens Länge von 6
     function password_validation (passid, min){
     var passid_length = passid.value.length;
-
-    if(passid_length >=6){
+        min=6;
+    if(passid_length >= min){
         return true;
     } else {
         alert("Das Passwort muss mindestens 6 Zeichen lang sein");
@@ -38,7 +35,7 @@ function formValidation() {
     }
 
     }
-
+    // Vorraussetzungen Username, soll Buchstaben enthalten etc.
     function userName_validation (username){
 
     var letters = /^[A-Za-z]+$/;
@@ -54,7 +51,7 @@ function formValidation() {
     }
 
 }
-
+//Vorraussetzungen für Adresse, muss gültig sein
 function addressnotempty (useradd){
     var letters = /^[0-9a-zA-Z]+$/;
     if (useradd.value.match(letters) && useradd != null){
@@ -66,10 +63,7 @@ function addressnotempty (useradd){
     }
 
 }
-
-
-
-
+//Vorraussetzungen für die E-mail Adresse, muss vor dem @ was haben, und danach ...
 function validation_email(uemail){
 
     var formatformail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
