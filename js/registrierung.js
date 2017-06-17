@@ -51,7 +51,7 @@ function formValidation() {
     }
 
 }
-//Vorraussetzungen für Adresse, muss gültig sein
+//Vorraussetzungen für Adresse, muss gültig sein, für Straße, Hausnummer, Ort & PLZ
 function addressnotempty (useradd){
     var letters = /^[0-9a-zA-Z]+$/;
     if (useradd.value.match(letters) && useradd != null){
