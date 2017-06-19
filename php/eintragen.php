@@ -1,5 +1,5 @@
 <?php
-include 'dbNewConnection.php';
+include '../database/dbNewConnection.php';
 
 $fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8') ;
 $lname = $_POST['lname'];
