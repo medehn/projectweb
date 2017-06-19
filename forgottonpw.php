@@ -1,6 +1,6 @@
 <?php
-include('php\nav.php');
-include('php\header.php')
+include('php/nav.php');
+include('php/header.php')
 ?>
 <!--Seiten-Navigation-->
 <div class="container-fluid">
@@ -52,5 +52,5 @@ include('php\header.php')
 </div>
 
 <?php
-include('php\footer.php')
+include('php/footer.php')
 ?>

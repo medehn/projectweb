@@ -1,6 +1,6 @@
 <?php
-include('php\nav.php');
-include('php\header.php')
+include('php/nav.php');
+include('php/header.php')
 ?>
     <!--Seiten-Navigation-->
     <div class="container-fluid text-center">
@@ -137,5 +137,5 @@ include('php\header.php')
 
 <!--Footer mit Facebook, FAQ, Impressum-->
 <?php
-include('php\footer.php')
+include('php/footer.php')
 ?>

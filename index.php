@@ -1,6 +1,6 @@
 <?php
-include('php\nav.php');
-include('php\header.php')
+include('php/nav.php');
+include('php/header.php')
 ?>
 
 <!--Seiten-Navigation-->
@@ -23,5 +23,5 @@ include('php\header.php')
     </div>
 </div>
 <?php
-include('php\footer.php')
+include('php/footer.php')
 ?>
