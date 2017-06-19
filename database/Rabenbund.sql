@@ -4,15 +4,6 @@ GO
 USE Rabenbund;
 GO
 
-CREATE TABLE Besucher (
-	 besucherid INT
-	,userid INT
-	,eventid INT
-	,PRIMARY KEY (besucherid)
-	,FOREIGN KEY (userid) REFERENCES Benutzer (userid)
-	,FOREIGN KEY (eventid) REFERENCES Events (eventid)
-);
-
 
 CREATE TABLE Benutzer (
 	 userid INT
@@ -31,7 +22,6 @@ CREATE TABLE Benutzer (
 	,interests VARCHAR (100)
 	,besucherid INT
 	,PRIMARY KEY (userid)
-	,FOREIGN KEY (besucherid) REFERENCES Besucher (besucherid)
 );
 
 CREATE TABLE Events (
@@ -46,6 +36,14 @@ CREATE TABLE Events (
 	,besuchername VARCHAR (100)
 	,sonstiges VARCHAR (100)
 	,PRIMARY KEY (eventid)
-	,FOREIGN KEY (besucherid) REFERENCES Besucher (besucherid)
+);
+
+CREATE TABLE Besucher (
+	 besucherid INT
+	,userid INT
+	,eventid INT
+	,PRIMARY KEY (besucherid)
+	,FOREIGN KEY (userid) REFERENCES Benutzer (userid)
+	,FOREIGN KEY (eventid) REFERENCES Events (eventid)
 );
 
