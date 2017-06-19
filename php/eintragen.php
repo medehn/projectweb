@@ -1,5 +1,5 @@
 <?php
-include 'dbConnect.php';
+include 'dbNewConnection.php';
 
 $fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8') ;
 $lname = $_POST['lname'];
@@ -8,7 +8,7 @@ $userpassword = $_POST['userpassword'];
 $birthdate = $_POST['birhtdate'];
 
 //kontrolle ob im array was eingetragen ist
-if(isset($vname)){
+if(isset($fname)){
     echo "Vname geht";
 }else{
     echo "Vname geht nix";
