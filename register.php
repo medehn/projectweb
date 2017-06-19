@@ -12,7 +12,10 @@ include('php\header.php')
         <div class="col-sm-6 text-left">
             <div class="container">
                 <h1 class="well">Registrierung</h1>
+<<<<<<< HEAD
                 <form action="reg.php" method="post">
+=======
+>>>>>>> 4fa2c68a6fa7325cac7adc034f215aa0a53695b3
                     <div class="col-sm-12 well">
                         <div class="row">
                             <div class="col-sm-6 form-group">
