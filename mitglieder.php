@@ -1,5 +1,5 @@
 <?php
-include('php\nav.php');?>
+include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Mitglieder</a></li>
@@ -17,12 +17,13 @@ include('php\header.php')
             <p><a href="events.php" id="navlink">Anmeldung Events</a></p>
         </div>
         <div class="col-sm-6 text-left">
-            <h3>UNDER CONSTRUCTION</h3>            <br>
+            <br>
             <br>
             <br>
             <h3 class="text-center">UNDER CONSTRUCTION</h3>
 
-            <img class="text-center" src="img\knight.png">        </div>
+            <img class="text-center" src="img\knight.png">
+        </div>
     </div>
 </div>
 <?php
