@@ -92,8 +92,7 @@ include('php/header.php')
                                     <h2>
                                         <div class="text-center">
                                             <button type="submit" name="submit" class="btn btn-labeled btn-success">
-                                                        <span class="btn-label"><i
-                                                                    class="glyphicon glyphicon-ok"></i></span>Absenden
+                                                        <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden
                                             </button>
                                     </h2>
                                 </div>
