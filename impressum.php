@@ -24,9 +24,9 @@ include('php\header.php')
                 <br>
 
                 Rabenbund zu Landeck <br>
-                Email: <a href="info@rabenbund.at">info@rabenbund.at</a> <br>
-                Webseite: <a href="www.rabenbund.at">Rabenbund.at</a> <br>
-                Forum: http://die-kraehenritter.userboard.org/forum.php <br>
+                <a href="info@rabenbund.at">info@rabenbund.at</a> <br>
+                <a href="www.rabenbund.at">Rabenbund.at</a> <br>
+                <a href="http://die-kraehenritter.userboard.org/forum.php">Forum</a> <br>
             </p>
             <hr>
             <p>
