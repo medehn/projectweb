@@ -1,13 +1,20 @@
+<!-- Seite zur Anmeldung für Events-->
 <?php
-include('php/nav.php');
-include('php/header.php')
+include('php\nav.php');?>
+<ol class="breadcrumb">
+    <li class="active">Home</li>
+    <li><a href="#">Anmeldung Events</a></li>
+
+</ol>
+<?php
+include('php\header.php')
 ?>
     <!--Seiten-Navigation-->
     <div class="container-fluid text-center">
         <div class="row content">
             <div class="col-sm-2 sidenav">
                 <p><a href="profile.php">Mein Profil</a></p>
-                <p><a href="events.php">Anmeldung Lager</a></p>
+                <p><a href="events.php">Anmeldung Events</a></p>
             </div>
             <div class="col-sm-6 text-left">
                 <form class="form-horizontal">
@@ -20,7 +27,14 @@ include('php/header.php')
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="name">Name</label>
                             <div class="col-md-4">
-                                <input id="name" name="name" type="text" placeholder="Vorname Nachname" class="form-control input-md" required="">
+                                <input id="name" name="fname" type="text" placeholder="Vorname" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Name</label>
+                            <div class="col-md-4">
+                                <input id="name" name="lname" type="text" placeholder="Nachname" class="form-control input-md" required="">
                             </div>
                         </div>
 
@@ -137,5 +151,5 @@ include('php/header.php')
 
 <!--Footer mit Facebook, FAQ, Impressum-->
 <?php
-include('php/footer.php')
+include('php\footer.php')
 ?>
