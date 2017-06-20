@@ -1,13 +1,17 @@
 <!-- Seite zur Anmeldung für Events-->
 <?php
+<<<<<<< HEAD
 include('php\nav.php'); ?>
+=======
+include('php/nav.php');?>
+>>>>>>> 787039eed80a99e7a855e8745378617b43d8fa5e
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Anmeldung Events</a></li>
 
 </ol>
 <?php
-include('php\header.php')
+include('php/header.php')
 ?>
 <!--Seiten-Navigation-->
 <div class="container-fluid text-center">
@@ -23,12 +27,22 @@ include('php\header.php')
                     <!-- Formular Name -->
                     <legend>Anmeldung Lager</legend>
 
+<<<<<<< HEAD
                     <!-- Name-->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="name">Name</label>
                         <div class="col-md-4">
                             <input id="name" name="fname" type="text" placeholder="Name" class="form-control input-md"
                                    required="">
+=======
+                        <!-- Name-->
+                        <form action="php/eintragen.php" method="post">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Name</label>
+                            <div class="col-md-4">
+                                <input id="name" name="fname" type="text" placeholder="Name" class="form-control input-md" required="">
+                            </div>
+>>>>>>> 787039eed80a99e7a855e8745378617b43d8fa5e
                         </div>
                     </div>
 
@@ -123,11 +137,22 @@ include('php\header.php')
                         </div>
                     </div>
 
+<<<<<<< HEAD
                     <!-- Sonstiges-->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="hotel">Infos, Wünsche, Anmerkungen?</label>
                         <div class="col-md-4">
                             <input type="text" placeholder="" class="form-control input-md">
+=======
+                                </div>
+                            </div>
+                    </fieldset>
+                    <div class="container">
+                        <div class="row">
+                            <h2>  <div class="text-center">
+                                    <button type="submit" name="submit" class="btn btn-labeled btn-success">
+                                        <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden</button>
+>>>>>>> 787039eed80a99e7a855e8745378617b43d8fa5e
 
                         </div>
                     </div>
@@ -151,5 +176,5 @@ include('php\header.php')
 
 <!--Footer mit Facebook, FAQ, Impressum-->
 <?php
-include('php\footer.php')
+include('php/footer.php')
 ?>
