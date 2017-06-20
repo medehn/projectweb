@@ -9,9 +9,9 @@
             <button type="button" class="btn btn-default">FAQ</button>
         </p>
         <p class="facebook">
-            <button type="button" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
-            <a href="https://www.facebook.com/rabenbundzulandeck/"></a>
-        </p>
+            <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Facebook</button>
+        <?php include ('facebook.php')
+    ?>
 
     </div>
 </footer>
