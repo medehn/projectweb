@@ -91,6 +91,8 @@ include('php/header.php')
                                 <div class="row">
                                     <h2>
                                         <div class="text-center">
+                                            <!-- @Anni bitte JavaScript runtherumbauen damit die beim on click auf die
+                                             Profil Seite weitergeleitet wird-->
                                             <button type="submit" name="submit" class="btn btn-labeled btn-success">
                                                         <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden
                                             </button>

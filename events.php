@@ -1,7 +1,7 @@
 <!-- Seite zur Anmeldung für Events-->
 <?php
 
-include('php\nav.php'); ?>
+include('php/nav.php'); ?>
 
 <ol class="breadcrumb">
     <li class="active">Home</li>
@@ -31,7 +31,7 @@ include('php/header.php')
                             <label class="col-md-4 control-label" for="name">Name</label>
                             <div class="col-md-4">
                                 <input id="name" name="fname" type="text" placeholder="Name"
-                                       class="form-control input-md" required="">
+                                       class="form-control" required="">
                             </div>
 
                         </div>
@@ -42,7 +42,7 @@ include('php/header.php')
                             <label class="col-md-4 control-label" for="emailaddress">Email Addresse</label>
                             <div class="col-md-4">
                                 <input id="emailaddress" name="emailaddress" type="text" placeholder="Email Adresse"
-                                       class="form-control input-md" required="">
+                                       class="form-control " required="">
                             </div>
 
                             <!-- Event-->
@@ -50,12 +50,12 @@ include('php/header.php')
                         <div class="form-group">
                             <label class="col-md-4 control-label">Event</label>
                             <div class="col-md-4">
-                                <input type="text" placeholder="Event (Ehrenberg, Schluderns, ..."
-                                       class="form-control input-md" required="">
+                                <input type="text" name="eventname" placeholder="Event (Ehrenberg, Schluderns, ..."
+                                       class="form-control" required="">
                             </div>
                         </div>
 
-                        <!-- Wieviele Tage? -->
+                        <!-- Wieviele Tage?
                         <div class="form-group">
                             <label class="col-md-4 control-label">Tage</label>
                             <div class="col-md-4">
@@ -66,8 +66,8 @@ include('php/header.php')
                                 </select>
                             </div>
                         </div>
-
-                        <!-- Eigenes Zelt?-->
+                        -->
+                        <!-- Eigenes Zelt?
                         <div class="form-group">
                             <label class="col-md-4 control-label">Eigenes Zelt</label>
                             <div class="col-md-4">
@@ -85,8 +85,8 @@ include('php/header.php')
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Eigenes Auto?-->
+                        -->
+                        <!-- Eigenes Auto?
                         <div class="form-group">
                             <label class="col-md-4 control-label">Eigenes Auto</label>
                             <div class="col-md-4">
@@ -105,7 +105,8 @@ include('php/header.php')
                                 </div>
                             </div>
                         </div>
-                        <!-- Eigenes Auto-->
+                        -->
+                        <!-- Eigenes Auto
                         <div class="form-group">
                             <label class="col-md-4 control-label">Platz im Auto für wieviele Personen?</label>
                             <div class="col-md-4">
@@ -118,13 +119,13 @@ include('php/header.php')
                                 </select>
                             </div>
                         </div>
-
+                           -->
                         <!-- Auto-->
                         <div class="form-group">
                             <label class="col-md-4 control-label"> Bei Auto: zB Anhängerkupplung, Platz für Equipment,
                                 Mitfahrer....</label>
                             <div class="col-md-4">
-                                <input type="text" placeholder="" class="form-control input-md">
+                                <input type="text" name="car" placeholder="" class="form-control">
                             </div>
                         </div>
 
@@ -133,7 +134,7 @@ include('php/header.php')
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="hotel">Infos, Wünsche, Anmerkungen?</label>
                             <div class="col-md-4">
-                                <input type="text" placeholder="" class="form-control input-md">
+                                <input type="text" name="sonstiges"placeholder="" class="form-control ">
 
                             </div>
                         </div>
