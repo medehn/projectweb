@@ -23,11 +23,9 @@
                 <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Verein
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="menu-item dropdown"><a href="./geschichte.php" class="dropdown-toggle"
-                                                          data-toggle="dropdown">Geschichte </a>
+                        <li class="menu-item dropdown"><a href="./geschichte.php">Geschichte </a>
                         </li>
-                        <li class="menu-item dropdown"><a href="./mitglieder.php" class="dropdown-toggle"
-                                                          data-toggle="dropdown">Mitglieder </a>
+                        <li class="menu-item dropdown"><a href="./mitglieder.php">Mitglieder </a>
                         </li>
                     </ul>
                 </li>
@@ -35,13 +33,11 @@
                 <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Kontakt
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="menu-item dropdown"><a href="./ueberuns.php" class="dropdown-toggle"
-                                                          data-toggle="dropdown">Über Uns </a>
+                        <li class="menu-item dropdown"><a href="./ueberuns.php">Über Uns </a>
                         </li>
 
                         <li class="divider"></li>
-                        <li class="menu-item dropdown"><i class="fa"></i><a href="./impressum.php" class="dropdown-toggle"
-                                                                            data-toggle="dropdown">Impressum</a>
+                        <li class="menu-item dropdown"><i class="fa"></i><a href="./impressum.php" >Impressum</a>
                         </li>
                     </ul>
                 </li>

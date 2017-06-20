@@ -26,7 +26,7 @@ include('php\header.php')
                 <p>Name: </p>
                 <p>Funktion: </p>
                 <p>Besondere Fähigkeiten:</p>
-                <p>Ineresen:</p>
+                <p>Interesen:</p>
 
                 </div>
         </div>

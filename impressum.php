@@ -1,5 +1,5 @@
 <?php
-include('php\nav.php');?>
+include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Impressum</a></li>
@@ -19,10 +19,38 @@ include('php\header.php')
         <div class="col-sm-6 text-left">
             <br>
             <br>
-            <br>
-            <h3 class="text-center">UNDER CONSTRUCTION</h3>
+            <h2 class="text-divider"><span>Impressum</span></h2>
+            <p>
+                <br>
 
-            <img class="text-center" src="img\knight.png">
+                Rabenbund zu Landeck <br>
+                Email: info@rabenbund.at <br>
+                Webseite: www.rabenbund.at <br>
+                Forum: http://die-kraehenritter.userboard.org/forum.php <br>
+            </p>
+            <hr>
+            <p>
+            <h3>Hinweis zu Links und Bannern:</h3>
+            Für fremde Inhalte wird keine Verantwortung übernommen, diese verbleibt beim Anbieter der jeweiligen
+            Websites, unabhängig von der Natur der Verlinkung (redaktionell, automatisch oder von Dritten).
+            Inhalte und Meinung auf verlinkten Seiten entsprechen nicht automatisch der Meinung des Rabenbundes.
+
+            <hr>
+            <p>
+            <h3>Rechtliche Hinweise, Qualitätssicherung, Haftungsausschluss:</h3>
+            Wir sind bestrebt, stets aktuelle und vollständige Informationen anzubieten, jedwede Haftung für
+            Korrektheit,
+            Aktualität und Vollständigkeit wird jedoch ausgeschlossen.
+
+            <hr>
+            <p>
+            <h3>Alle Rechte vorbehalten.</h3>
+            Die auf der Website verwendeten Inhalte, Bilder, Grafiken, unterliegen den jeweils einschlägigen
+            nationalen Urheberrechtsgesetzen und anderen Gesetzen zum Schutz des geistigen Eigentums. Insbesondere die
+            dauerhafte Speicherung, Weitergabe, Bearbeitung oder Veränderung sowie die Nutzung oder Verwendung
+            geschützter Inhalte für andere Websites oder Medien werden nicht gestattet.
+            <br>
+            <br>
         </div>
     </div>
 </div>
