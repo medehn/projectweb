@@ -37,7 +37,7 @@
                         </li>
 
                         <li class="divider"></li>
-                        <li class="menu-item dropdown"><i class="fa"></i><a href="./impressum.php" >Impressum</a>
+                        <li class="menu-item dropdown"><i class="fa"></i><a href="./impressum.php">Impressum</a>
                         </li>
                     </ul>
                 </li>
@@ -68,7 +68,5 @@
                 </div>
             </ul>
         </div>
-
-
 </nav>
 

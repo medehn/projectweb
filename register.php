@@ -1,5 +1,5 @@
 <?php
-include('php/nav.php');?>
+include('php/nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Registrierung</a></li>
@@ -39,7 +39,7 @@ include('php/header.php')
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>PLZ</label>
-                                <input type="text" placeholder="" name="plz"class="form-control">
+                                <input type="text" placeholder="" name="plz" class="form-control">
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>Ort</label>
@@ -47,11 +47,11 @@ include('php/header.php')
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>Geburtsdatum</label>
-                                <input type="date" placeholder="" name="birthdate"class="form-control">
+                                <input type="date" placeholder="" name="birthdate" class="form-control">
                             </div>
                             <div class="col-sm-6 form-group">
-                            <label>Email Addresse*</label>
-                            <input type="text" placeholder="" name="email" class="form-control" required>
+                                <label>Email Addresse*</label>
+                                <input type="text" placeholder="" name="email" class="form-control" required>
                             </div>
                             <br>
                             <hr>
@@ -61,7 +61,7 @@ include('php/header.php')
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>Passwort*</label>
-                                <input type="text" placeholder=""  name="userpassword" class="form-control" required>
+                                <input type="text" placeholder="" name="userpassword" class="form-control" required>
                             </div>
                         </div>
 
@@ -82,7 +82,7 @@ include('php/header.php')
 
                             <div class="col-sm-6 form-group">
                                 <label>Interessen</label>
-                                <input type="text" placeholder="" name="interests"  class="form-control">
+                                <input type="text" placeholder="" name="interests" class="form-control">
                                 <br>
                                 <hr>
                             </div>

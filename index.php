@@ -3,7 +3,7 @@ todo: Anpassung der Index-Seite für "eingeloggt" vs "nicht eingeloggt"
 -->
 
 <?php
-include('php\nav.php');?>
+include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
 </ol>
@@ -24,7 +24,7 @@ include('php\header.php')
             <br>
             <br>
             <p>Willkommen auf der neuen Homepage des Rabenbundes zu Landeck!
-            Die Seite befindet sich noch im Aufbau!</p>
+                Die Seite befindet sich noch im Aufbau!</p>
             <hr>
         </div>
     </div>

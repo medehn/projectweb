@@ -1,5 +1,5 @@
 <?php
-include('php\nav.php');?>
+include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Geschichte</a></li>
@@ -23,9 +23,9 @@ include('php\header.php')
             <h3 class="text-center">UNDER CONSTRUCTION</h3>
 
             <img class="text-center" src="img\knight.png">
-            </div>
         </div>
     </div>
+</div>
 <?php
 include('php\footer.php')
 ?>

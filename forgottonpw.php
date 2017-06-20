@@ -1,5 +1,5 @@
 <?php
-include('php\nav.php');?>
+include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Passwort vergessen</a></li>
@@ -22,40 +22,38 @@ include('php\header.php')
         </div>
         <div class="col-sm-8">
             <div class="container">
-                    <label>Deine Email Adresse</label>
-                    <input type="text" placeholder="Email Adresse" class="form-control" required>
+                <label>Deine Email Adresse</label>
+                <input type="text" placeholder="Email Adresse" class="form-control" required>
             </div>
             <br>
         </div>
-            <div class="col-sm-8">
-                <div class="container" </div>
-                <button type="button" class="btn btn-labeled btn-success"
-                        data-toggle="modal" data-target="#myModal">Absenden
+        <div class="col-sm-8">
+            <div class="container"
+        </div>
+        <button type="button" class="btn btn-labeled btn-success"
+                data-toggle="modal" data-target="#myModal">Absenden
+        </button>
+    </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Eine Email wurde an dich versendet! Bitte checke deine
+                    Mails!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">Close
                 </button>
             </div>
         </div>
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
 
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <p>Eine Email wurde an dich versendet! Bitte checke deine
-                            Mails!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal">Close
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <br/>
     </div>
-
 </div>
+
+<br/>
 
 <?php
 include('php/footer.php')
