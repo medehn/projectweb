@@ -25,7 +25,7 @@ CREATE TABLE Benutzer (
 );
 
 CREATE TABLE Events (
-	 eventid INT
+	 eventid INT AUTO_INCREMENT
 	,eventname VARCHAR (50)
 	,email VARCHAR (30)
 	,tage INT

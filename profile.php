@@ -6,7 +6,7 @@ include('php/nav.php'); ?>
 
 </ol>
 <?php
-include('php/header.php')
+include('php/header.php');
 ?>
 <!--Seiten-Navigation-->
 <div class="container-fluid text-center">
@@ -18,16 +18,17 @@ include('php/header.php')
         <br> <br>
         <div class="col-sm-4 img-rounded"><img class src="img\profile.jpg"></div>
 
-
+        <form method="get" action="/php/holenProfil.php">
         <div class="col-sm-6 text-left">
             <h1>Profil von Max Mustermann</h1>
             <br>
-            <p>Name: </p>
+            <p>Name:</p> <?php echo $lname ?>
             <p>Funktion: </p>
             <p>Besondere Fähigkeiten:</p>
             <p>Interesen:</p>
 
         </div>
+        </form>
     </div>
     <!-- Die Encoding-Art enctype MUSS wie dargestellt angegeben werden -->
     <form enctype="multipart/form-data" action="upload.php" method="POST">

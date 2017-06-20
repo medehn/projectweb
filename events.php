@@ -59,7 +59,7 @@ include('php/header.php')
                         <div class="form-group">
                             <label class="col-md-4 control-label">Tage</label>
                             <div class="col-md-4">
-                                <input id="tage" name="tage" type="text" placeholder="Tage"
+                                <input id="tage" name="tage" type="text" placeholder="0 - 7"
                                        class="form-control " required="">
 
                                 <!--<select class="form-control">
@@ -115,7 +115,7 @@ include('php/header.php')
                             <label class="col-md-4 control-label">Platz im Auto für wieviele Personen?</label>
                             <div class="col-md-4">
 
-                            <input type="text" name="carseats" placeholder="0-4" class="form-control">
+                            <input type="text" name="carseats" placeholder="0 - 4" class="form-control">
                                <!-- <select class="form-control">
                                     <option value="2">0</option>
                                     <option value="1">1</option>
