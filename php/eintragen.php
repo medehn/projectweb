@@ -1,13 +1,15 @@
 <?php
 
-include 'database/dbNewConnection.php';
+var_dump($_POST);
+
+include '../database/dbNewConnection.php';
 
 
 $fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8') ;
 $lname = $_POST['lname'];
 $username = $_POST['username'];
 $userpassword = $_POST['userpassword'];
-$birthdate = $_POST['birhtdate'];
+$birthdate = $_POST['birthdate'];
 $email = $_POST['email'];
 $adress = $_POST['adress'];
 $anumber = $_POST['anumber'];
@@ -32,8 +34,9 @@ $result = mysqli_query($connection,
 //überprüfung ob er was in die Datenbank einträgt
 if(!$result)
 {
-    echo 'Nicht eingetragen';
+    echo mysqli_error($connection);
+    echo ' Nicht eingetragen';
 }else{
-    echo 'Eingetragen';
+    echo ' Eingetragen';
 }
 

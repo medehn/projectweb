@@ -47,3 +47,5 @@ CREATE TABLE Besucher (
 	,FOREIGN KEY (eventid) REFERENCES Events (eventid)
 );
 
+ALTER TABLE Benutzer
+  anumber VARCHAR (5);
