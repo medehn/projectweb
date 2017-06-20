@@ -27,14 +27,7 @@ include('php\header.php')
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="name">Name</label>
                             <div class="col-md-4">
-                                <input id="name" name="fname" type="text" placeholder="Vorname" class="form-control input-md" required="">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="name">Name</label>
-                            <div class="col-md-4">
-                                <input id="name" name="lname" type="text" placeholder="Nachname" class="form-control input-md" required="">
+                                <input id="name" name="fname" type="text" placeholder="Name" class="form-control input-md" required="">
                             </div>
                         </div>
 

@@ -24,8 +24,8 @@ include('php\header.php')
                 <br>
 
                 Rabenbund zu Landeck <br>
-                Email: info@rabenbund.at <br>
-                Webseite: www.rabenbund.at <br>
+                Email: <a href="info@rabenbund.at">info@rabenbund.at</a> <br>
+                Webseite: <a href="www.rabenbund.at">Rabenbund.at</a> <br>
                 Forum: http://die-kraehenritter.userboard.org/forum.php <br>
             </p>
             <hr>
@@ -49,7 +49,6 @@ include('php\header.php')
             nationalen Urheberrechtsgesetzen und anderen Gesetzen zum Schutz des geistigen Eigentums. Insbesondere die
             dauerhafte Speicherung, Weitergabe, Bearbeitung oder Veränderung sowie die Nutzung oder Verwendung
             geschützter Inhalte für andere Websites oder Medien werden nicht gestattet.
-            <br>
             <br>
         </div>
     </div>
