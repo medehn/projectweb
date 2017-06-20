@@ -25,7 +25,6 @@ include('php/header.php')
                     <!-- Formular Name -->
                     <legend>Anmeldung Lager</legend>
 
-<<<<<<< HEAD
                     <!-- Name-->
                     <form action="php/eintragen.php" method="post">
                         <div class="form-group">
@@ -40,6 +39,7 @@ include('php/header.php')
 
                         <!-- Email Adresse-->
                         <div class="form-group">
+                            <label class="col-md-4 control-label" for="emailaddress">Email Addresse</label>
                             <div class="col-md-4">
                                 <input id="emailaddress" name="emailaddress" type="text" placeholder="Email Adresse"
                                        class="form-control input-md" required="">
