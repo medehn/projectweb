@@ -15,7 +15,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Home</a>
+            <a class="navbar-brand" href="./index.php">Home</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -23,10 +23,10 @@
                 <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Verein
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="menu-item dropdown"><a href="geschichte.php" class="dropdown-toggle"
+                        <li class="menu-item dropdown"><a href="./geschichte.php" class="dropdown-toggle"
                                                           data-toggle="dropdown">Geschichte </a>
                         </li>
-                        <li class="menu-item dropdown"><a href="mitglieder.php" class="dropdown-toggle"
+                        <li class="menu-item dropdown"><a href="./mitglieder.php" class="dropdown-toggle"
                                                           data-toggle="dropdown">Mitglieder </a>
                         </li>
                     </ul>
@@ -35,12 +35,12 @@
                 <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Kontakt
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="menu-item dropdown"><a href="ueberuns.php" class="dropdown-toggle"
+                        <li class="menu-item dropdown"><a href="./ueberuns.php" class="dropdown-toggle"
                                                           data-toggle="dropdown">Über Uns </a>
                         </li>
 
                         <li class="divider"></li>
-                        <li class="menu-item dropdown"><i class="fa"></i><a href="impressum.php" class="dropdown-toggle"
+                        <li class="menu-item dropdown"><i class="fa"></i><a href="./impressum.php" class="dropdown-toggle"
                                                                             data-toggle="dropdown">Impressum</a>
                         </li>
                     </ul>

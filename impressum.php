@@ -2,7 +2,7 @@
 include('php\nav.php');?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
-    <li><a href="#">Kontakt</a></li>
+    <li><a href="#">Impressum</a></li>
 </ol>
 <?php
 include('php\header.php')
