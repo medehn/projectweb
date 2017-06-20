@@ -1,13 +1,13 @@
 <!-- Seite zur Anmeldung für Events-->
 <?php
-include('php\nav.php');?>
+include('php/nav.php');?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Anmeldung Events</a></li>
 
 </ol>
 <?php
-include('php\header.php')
+include('php/header.php')
 ?>
     <!--Seiten-Navigation-->
     <div class="container-fluid text-center">
@@ -24,6 +24,7 @@ include('php\header.php')
                         <legend>Anmeldung Lager</legend>
 
                         <!-- Name-->
+                        <form action="php/eintragen.php" method="post">
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="name">Name</label>
                             <div class="col-md-4">
@@ -131,7 +132,7 @@ include('php\header.php')
                     <div class="container">
                         <div class="row">
                             <h2>  <div class="text-center">
-                                    <button type="button" class="btn btn-labeled btn-success">
+                                    <button type="submit" name="submit" class="btn btn-labeled btn-success">
                                         <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden</button>
 
                                     <br /></h2>
@@ -144,5 +145,5 @@ include('php\header.php')
 
 <!--Footer mit Facebook, FAQ, Impressum-->
 <?php
-include('php\footer.php')
+include('php/footer.php')
 ?>
