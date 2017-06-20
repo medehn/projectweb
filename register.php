@@ -1,13 +1,19 @@
 <?php
-include('php/nav.php');
-include('php/header.php')
+include('php\nav.php');?>
+<ol class="breadcrumb">
+    <li class="active">Home</li>
+    <li><a href="#">Registrierung</a></li>
+
+</ol>
+<?php
+include('php\header.php')
 ?>
 <!--Seiten-Navigation-->
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
             <p><a href="profile.php">Mein Profil</a></p>
-            <p><a href="events.php">Anmeldung Lager</a></p>
+            <p><a href="events.php">Anmeldung Events</a></p>
         </div>
         <div class="col-sm-6 text-left">
             <div class="container">
