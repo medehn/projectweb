@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('php/nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
@@ -18,11 +19,11 @@ include('php/header.php');
         <br> <br>
         <div class="col-sm-4 img-rounded"><img class src="img\profile.jpg"></div>
 
-        <form method="get" action="/php/holenProfil.php">
+        <form method="get" action="/php/detailsProfile.php">
         <div class="col-sm-6 text-left">
             <h1>Profil von Max Mustermann</h1>
             <br>
-            <p>Name:</p> <?php echo $uesername ?>
+            <p>Name:</p><?php echo $username; ?>
             <p>Funktion: </p>
             <p>Besondere Fähigkeiten:</p>
             <p>Interesen:</p>
