@@ -22,7 +22,7 @@ include('php/header.php');
         <div class="col-sm-6 text-left">
             <h1>Profil von Max Mustermann</h1>
             <br>
-            <p>Name:</p> <?php echo $lname ?>
+            <p>Name:</p> <?php echo $uesername ?>
             <p>Funktion: </p>
             <p>Besondere Fähigkeiten:</p>
             <p>Interesen:</p>

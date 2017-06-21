@@ -3,7 +3,12 @@ var_dump($_GET);
 
 include '../database/dbNewConnection.php';
 
-$lname = $_GET['lname'];
 
 
-$result= mysqli_connect($connection, "SELECT (".$lname.") FROM `Benutzer`");
+
+$email = $_POST['email'];
+$query = "SELECT * FROM users WHERE email='$email'";
+$row = mysqli_fetch_array($query);
+$username = $row['fname'];
+
+echo $username;
