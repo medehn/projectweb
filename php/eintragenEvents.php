@@ -23,7 +23,7 @@ if(isset($eventname)){
 }
 
 $result = mysqli_query($connection,
-    "INSERT into `Benutzer` (eventid,eventname ,email ,tage ,zelt ,car ,carseats ,besuchername ,sonstiges) 
+    "INSERT into `Events` (eventid,eventname ,email ,tage ,zelt ,car ,carseats ,besuchername ,sonstiges) 
           VALUES(NULL, '".$eventname."','".$email."','".$tage."','".$zelt."','".$car."','".$carseats."',
           '".$besuchername."','".$sonstiges."');");
 
