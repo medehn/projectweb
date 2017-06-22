@@ -16,22 +16,23 @@ $sonstiges = $_POST['sonstiges'];
 
 
 //kontrolle ob im array was eingetragen ist
-if(isset($fname)){
-    echo "Vname geht";
+if(isset($eventname)){
+    echo "Eventname geht   ";
 }else{
-    echo "Vname geht nix";
+    echo "Eventname geht nix   ";
 }
 
 $result = mysqli_query($connection,
-    "INSERT into `Benutzer` (	eventname ,email ,tage ,zelt ,car ,carseats ,besuchername ,sonstiges) 
-          VALUES(NULL, '".$eventname."','".$email."','".$tage."','".$zelt."','".$car."','".$carseats."','".$besuchername."','".$sonstiges."',);");
+    "INSERT into `Events` (eventid,eventname ,email ,tage ,zelt ,car ,carseats ,besuchername ,sonstiges) 
+          VALUES(NULL, '".$eventname."','".$email."','".$tage."','".$zelt."','".$car."','".$carseats."',
+          '".$besuchername."','".$sonstiges."');");
 
 
 //überprüfung ob er was in die Datenbank einträgt
 if(!$result)
 {
     echo mysqli_error($connection);
-    echo ' Nicht eingetragen';
+    echo '   Nicht eingetragen';
 }else{
-    echo ' Eingetragen';
+    echo '   Eingetragen';
 }

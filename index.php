@@ -3,12 +3,12 @@ todo: Anpassung der Index-Seite für "eingeloggt" vs "nicht eingeloggt"
 -->
 
 <?php
-include('php\nav.php'); ?>
+include('php/nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
 </ol>
 <?php
-include('php\header.php')
+include('php/header.php')
 ?>
 
 
@@ -30,6 +30,6 @@ include('php\header.php')
     </div>
 </div>
 <?php
-include('php\footer.php')
+include('php/footer.php')
 ?>
 
