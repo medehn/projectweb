@@ -1,26 +1,14 @@
 <?php
 
+//var_dump($_SESSION);
 
-require_once('../database/dbNewConnection.php');
+require_once(__DIR__.'/../database/dbNewConnection.php');
 
-$username = mysqli_query("SELECT * FROM Benutzer WHERE username = '$username' AND userid = 1");
-$result = mysqli_fetch_assoc($username);
+$username = $_SESSION['username'];
 
-/*
-$username = $_GET['username'];
-$userid = $_GET['userid'];
+$result = mysqli_query($connection, "SELECT * FROM `Benutzer` WHERE username = '$username'");
 
-$query = "SELECT * FROM Benutzer WHERE username='.$username.' userid='.$userid.'";
-$result = mysqli_query($connection, $query);
+$row = mysqli_fetch_assoc($result);
 
 
-if (!$result && mysqli_num_rows($result) != 1)
-{
-    die("Error: Data not found..");
-}
-echo mysqli_error($result);
-
-$test = mysqli_fetch_array($result);
-$username = $test['username'];
-*/
 ?>
