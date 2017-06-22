@@ -1,18 +1,13 @@
 <?php
-session_start();
-include('php/detailsProfile.php');
-include('php/header.php');
-include('php/nav.php');
-?>
-
+include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Profil</a></li>
 
 </ol>
-
-
-
+<?php
+include('php\header.php')
+?>
 <!--Seiten-Navigation-->
 <div class="container-fluid text-center">
     <div class="row content">
@@ -23,20 +18,16 @@ include('php/nav.php');
         <br> <br>
         <div class="col-sm-4 img-rounded"><img class src="img\profile.jpg"></div>
 
-        <form method="get" action="php/detailsProfile.php">
+
         <div class="col-sm-6 text-left">
-            <h1>Profil von <?php echo $row['fname'],"&nbsp", $row['lname']; ?></h1>
+            <h1>Profil von Max Mustermann</h1>
             <br>
-            <p>Name: <?php echo $row['username']; ?> </p>
-            <p>Funktion: <?php echo $row['funktion']; ?> </p>
-            <p>Besondere Fähigkeiten:  <?php echo $row['skills']; ?> </p>
-            <p>Interesen: <?php echo $row['interests']; ?> </p>
+            <p>Name: </p>
+            <p>Funktion: </p>
+            <p>Besondere Fähigkeiten:</p>
+            <p>Interesen:</p>
 
         </div>
-
-
-            
-        </form>
     </div>
     <!-- Die Encoding-Art enctype MUSS wie dargestellt angegeben werden -->
     <form enctype="multipart/form-data" action="upload.php" method="POST">
@@ -48,5 +39,5 @@ include('php/nav.php');
     </form>
 </div>
 <?php
-include('php/footer.php')
+include('php\footer.php')
 ?>

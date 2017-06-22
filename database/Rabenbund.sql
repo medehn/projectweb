@@ -1,134 +1,51 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Erstellungszeit: 22. Jun 2017 um 16:57
--- Server-Version: 10.1.21-MariaDB
--- PHP-Version: 5.6.30
+CREATE DATABASE Rabenbund;
+GO
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+USE Rabenbund;
+GO
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+CREATE TABLE Benutzer (
+	 userid INT
+	,fname VARCHAR (20)
+	,lname VARCHAR (20)
+	,username VARCHAR (20)
+	,userpassword VARCHAR (18)
+	,birthdate DATE
+	,email VARCHAR (30)
+	,adress VARCHAR (50)
+	/*,adressnr INT*/
+	,plz INT
+	,ort VARCHAR (20)
+	,funktion VARCHAR (100)
+	,skills VARCHAR (100)
+	,interests VARCHAR (100)
+	,besucherid INT
+	,PRIMARY KEY (userid)
+);
 
---
--- Datenbank: `rabenbund`
---
+CREATE TABLE Events (
+	 eventid INT
+	,eventname VARCHAR (50)
+	,email VARCHAR (30)
+	,tage INT
+	,zelt VARCHAR (10)
+	,car VARCHAR (10)
+	,carseats INT
+	,besucherid INT
+	,besuchername VARCHAR (100)
+	,sonstiges VARCHAR (100)
+	,PRIMARY KEY (eventid)
+);
 
--- --------------------------------------------------------
+CREATE TABLE Besucher (
+	 besucherid INT
+	,userid INT
+	,eventid INT
+	,PRIMARY KEY (besucherid)
+	,FOREIGN KEY (userid) REFERENCES Benutzer (userid)
+	,FOREIGN KEY (eventid) REFERENCES Events (eventid)
+);
 
---
--- Tabellenstruktur für Tabelle `benutzer`
---
-
-CREATE TABLE `benutzer` (
-  `userid` int(100) UNSIGNED NOT NULL,
-  `fname` varchar(20) NOT NULL,
-  `lname` varchar(20) NOT NULL,
-  `username` varchar(20) NOT NULL,
-  `userpassword` varchar(18) NOT NULL,
-  `birthdate` date NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `adress` varchar(50) NOT NULL,
-  `plz` int(10) UNSIGNED NOT NULL,
-  `ort` varchar(20) NOT NULL,
-  `funktion` varchar(100) NOT NULL,
-  `skills` varchar(100) NOT NULL,
-  `interests` varchar(100) NOT NULL,
-  `besucherid` int(11) DEFAULT NULL,
-  `anumber` varchar(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `besucher`
---
-
-CREATE TABLE `besucher` (
-  `besucherid` int(10) UNSIGNED NOT NULL,
-  `userid` int(10) UNSIGNED NOT NULL,
-  `eventid` int(10) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `events`
---
-
-CREATE TABLE `events` (
-  `eventid` int(10) UNSIGNED NOT NULL,
-  `eventname` varchar(50) NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `tage` int(10) UNSIGNED NOT NULL,
-  `zelt` varchar(10) NOT NULL,
-  `car` varchar(10) NOT NULL,
-  `carseats` int(10) UNSIGNED NOT NULL,
-  `besucherid` int(10) UNSIGNED NOT NULL,
-  `besuchername` varchar(100) NOT NULL,
-  `sonstiges` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Indizes der exportierten Tabellen
---
-
---
--- Indizes für die Tabelle `benutzer`
---
-ALTER TABLE `benutzer`
-  ADD PRIMARY KEY (`userid`);
-
---
--- Indizes für die Tabelle `besucher`
---
-ALTER TABLE `besucher`
-  ADD PRIMARY KEY (`besucherid`),
-  ADD KEY `userid` (`userid`),
-  ADD KEY `eventid` (`eventid`);
-
---
--- Indizes für die Tabelle `events`
---
-ALTER TABLE `events`
-  ADD PRIMARY KEY (`eventid`);
-
---
--- AUTO_INCREMENT für exportierte Tabellen
---
-
---
--- AUTO_INCREMENT für Tabelle `benutzer`
---
-ALTER TABLE `benutzer`
-  MODIFY `userid` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT für Tabelle `besucher`
---
-ALTER TABLE `besucher`
-  MODIFY `besucherid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT für Tabelle `events`
---
-ALTER TABLE `events`
-  MODIFY `eventid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
---
--- Constraints der exportierten Tabellen
---
-
---
--- Constraints der Tabelle `besucher`
---
-ALTER TABLE `besucher`
-  ADD CONSTRAINT `besucher_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `benutzer` (`userid`),
-  ADD CONSTRAINT `besucher_ibfk_2` FOREIGN KEY (`eventid`) REFERENCES `events` (`eventid`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ALTER TABLE Benutzer
+  anumber VARCHAR (5);

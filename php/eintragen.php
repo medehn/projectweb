@@ -28,8 +28,7 @@ if(isset($fname)){
 
 $result = mysqli_query($connection,
     "INSERT into `Benutzer` (userid,fname,lname,username,userpassword,birthdate,email,adress,anumber,plz,ort,funktion,skills,interests) 
-          VALUES(NULL,'".$fname."', '".$lname."','".$username."', '".$userpassword."','".$birthdate."','".$email ."',
-          '".$adress ."','".$anumber ."','".$plz ."','".$ort ."','".$funktion ."','".$skills ."','".$interests."');");
+          VALUES(NULL,'".$fname."', '".$lname."','".$username."', '".$userpassword."','".$birthdate."','".$email ."','".$adress ."','".$anumber ."','".$plz ."','".$ort ."','".$funktion ."','".$skills ."','".$interests."');");
 
 
 //überprüfung ob er was in die Datenbank einträgt
