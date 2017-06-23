@@ -24,7 +24,7 @@ include('php/nav.php');
         <div class="col-xs-4 img-rounded"><img class src="img\profile.jpg"></div>
 
         <form method="get" action="php/detailsProfile.php">
-        <div class="col-sm-6 text-left">
+        <div class="col-xs-6 text-left">
             <h1>Profil von <?php echo $row['fname'],"&nbsp", $row['lname']; ?></h1>
             <br>
             <p>Name: <?php echo $row['username']; ?> </p>

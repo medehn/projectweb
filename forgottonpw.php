@@ -11,23 +11,23 @@ include('php/header.php')
 <!--Seiten-Navigation-->
 <div class="container-fluid">
     <div class="row content">
-        <div class="col-sm-2 sidenav">
+        <div class="col-xs-2 sidenav">
             <p><a href="profile.php">Mein Profil</a></p>
             <p><a href="events.php">Anmeldung Events</a></p>
         </div>
-        <div class="col-sm-6 text-left text-center">
+        <div class="col-xs-6 text-left text-center">
             <div class="container">
                 <h1 class="well">Passwort vergessen?</h1>
             </div>
         </div>
-        <div class="col-sm-8">
+        <div class="col-xs-8">
             <div class="container">
                 <label>Deine Email Adresse</label>
                 <input type="text" placeholder="Email Adresse" class="form-control" required>
             </div>
             <br>
         </div>
-        <div class="col-sm-8">
+        <div class="col-xs-8">
             <div class="container"
         </div>
         <button type="button" class="btn btn-labeled btn-success"
