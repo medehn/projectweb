@@ -63,7 +63,7 @@ include('php/header.php')
                             </div>
                             <div class="col-xs-6 form-group">
                                 <label>Passwort*</label>
-                                <input type="text" placeholder="" name="userpassword" class="form-control" required>
+                                <input type="password" placeholder="" name="userpassword" class="form-control" required>
                             </div>
                         </div>
 
