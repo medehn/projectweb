@@ -94,10 +94,11 @@ include('php/header.php')
                                     <h2>
                                         <div class="text-center">
                                             <!-- @Anni bitte JavaScript runtherumbauen damit die beim on click auf die
-                                             Profil Seite weitergeleitet wird-->
+                                             Profil Seite weitergeleitet wird oder auf die reg_erfolg-->
 
                                             <button type="submit" name="submit" class="btn btn-labeled btn-success">
                                                         <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden
+                                                <a href="reg_erfolg.php"></a>
                                             </button>
                                     </h2>
                                 </div>
