@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('php/detailsProfile.php');
-include('php/header.php');
+
 include('php/nav.php');
 ?>
 
@@ -10,8 +10,9 @@ include('php/nav.php');
     <li><a href="#">Profil</a></li>
 
 </ol>
-
-
+<?php
+include('php/header.php');
+?>
 
 <!--Seiten-Navigation-->
 <div class="container-fluid text-center">
