@@ -2,7 +2,7 @@
 
 //var_dump($_SESSION);
 
-require_once(__DIR__.'/../database/dbNewConnection.php');
+require_once(__DIR__ . '/../database/dbNewConnection.php');
 
 $username = $_SESSION['username'];
 

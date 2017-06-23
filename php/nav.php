@@ -69,15 +69,17 @@
                      aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
                         <div class="loginmodal-container">
-                            <?php if(isset($smsg)){?> <div class="alert alert-success" role="alert"> <?php echo $smsg; ?></div>
+                            <?php if (isset($smsg)) { ?>
+                                <div class="alert alert-success" role="alert"> <?php echo $smsg; ?></div>
                             <?php } ?>
-                            <?php if(isset($fmsg)){?> <div class="alert alert-success" role="alert"> <?php echo $fmsg; ?></div>
+                            <?php if (isset($fmsg)) { ?>
+                                <div class="alert alert-success" role="alert"> <?php echo $fmsg; ?></div>
                             <?php } ?>
                             <h1>Einloggen</h1><br>
                             <form method="post" class="form-signin" id="login" action="php/login.php">
                                 <input type="text" name="username" id="username" placeholder="Username">
                                 <input type="password" name="userpassword" id="userpassword" placeholder="Password">
-                                <input type="submit" name="Submit"  class="login loginmodal-submit"
+                                <input type="submit" name="Submit" class="login loginmodal-submit"
                                        value="Login">
                             </form>
 

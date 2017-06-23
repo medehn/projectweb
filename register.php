@@ -1,3 +1,5 @@
+<!-- todo: Bei Absenden des Formulars soll Email gesendet werden-->
+
 <?php
 include('php/nav.php'); ?>
 
@@ -97,7 +99,7 @@ include('php/header.php')
                                              Profil Seite weitergeleitet wird oder auf die reg_erfolg-->
 
                                             <button type="submit" name="submit" class="btn btn-labeled btn-success">
-                                                        <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden
+                                                <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden
                                                 <a href="reg_erfolg.php"></a>
                                             </button>
                                     </h2>

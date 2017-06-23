@@ -21,12 +21,13 @@ include('php\header.php')
 
             <p class="container-fluid text-center">
                 <br>
-            <p><h2 class="container-fluid text-center">Lagerleben</h2></p>
+            <p>
+            <h2 class="container-fluid text-center">Lagerleben</h2></p>
             <br>
-                Neben den Kämpfen und dem Handwerklichen
-                Programm, nehmen wir auch bei Festen in und rund um Tirol teil. Wir lagern mit
-                mittelalterlicher Ausrüstung und zeigen, wie die Menschen damals gelebt haben könnten.
-                Strom und technische Luxusgüter kommen dabei für uns nicht in Frage…</p>
+            Neben den Kämpfen und dem Handwerklichen
+            Programm, nehmen wir auch bei Festen in und rund um Tirol teil. Wir lagern mit
+            mittelalterlicher Ausrüstung und zeigen, wie die Menschen damals gelebt haben könnten.
+            Strom und technische Luxusgüter kommen dabei für uns nicht in Frage…</p>
             <br><br>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->

@@ -1,8 +1,7 @@
 <?php
 
 session_start();
-include ('../database/dbNewConnection.php');
-
+include('../database/dbNewConnection.php');
 
 
 if (isset($_POST) & !empty($_POST)) {
@@ -15,15 +14,15 @@ if (isset($_POST) & !empty($_POST)) {
 
     $_SESSION['username'] = $username;
 
-    if ($count == 1){
+    if ($count == 1) {
         $_SESSION['userpassword'] = $userpassword;
 
         header('location: ../profile.php');
-    }else {
+    } else {
         $fsmg = "username/password wrong";
     }
 
-    if (isset($_SESSION['username'])){
+    if (isset($_SESSION['username'])) {
         $smsg = "User already logged in";
     }
 }

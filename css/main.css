@@ -2,63 +2,77 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 /* line 3, ../sass/main.scss */
 .navbar {
-  margin-bottom: 0;
-  border-radius: 0; }
+    margin-bottom: 0;
+    border-radius: 0;
+}
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 /* line 10, ../sass/main.scss */
 .row.content {
-  height: 450px; }
+    height: 450px;
+}
 
 /* Set gray background color and 100% height */
 /* line 16, ../sass/main.scss */
 .sidenav {
-  padding-top: 20px;
-  background-color: #f1f1f1;
-  height: 100%; }
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
 
 /* Set black background color, white text and some padding */
 /* line 24, ../sass/main.scss */
 footer {
-  background-color: #555;
-  color: white;
-  padding: 15px; }
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
-  /* line 32, ../sass/main.scss */
-  .sidenav {
-    height: auto;
-    padding: 15px; }
+    /* line 32, ../sass/main.scss */
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
 
-  /* line 36, ../sass/main.scss */
-  .row.content {
-    height: auto; } }
+    /* line 36, ../sass/main.scss */
+    .row.content {
+        height: auto;
+    }
+}
+
 /****** LOGIN MODAL ******/
 /* line 45, ../sass/main.scss */
 .loginmodal-container {
-  padding: 30px;
-  max-width: 350px;
-  width: 100% !important;
-  background-color: #F7F7F7;
-  margin: 0 auto;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  font-family: roboto; }
-  /* line 55, ../sass/main.scss */
-  .loginmodal-container h1 {
+    padding: 30px;
+    max-width: 350px;
+    width: 100% !important;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: roboto;
+}
+
+/* line 55, ../sass/main.scss */
+.loginmodal-container h1 {
     text-align: center;
     font-size: 1.8em;
-    font-family: roboto; }
-  /* line 61, ../sass/main.scss */
-  .loginmodal-container input[type=submit] {
+    font-family: roboto;
+}
+
+/* line 61, ../sass/main.scss */
+.loginmodal-container input[type=submit] {
     width: 100%;
     display: block;
     margin-bottom: 10px;
-    position: relative; }
-  /* line 67, ../sass/main.scss */
-  .loginmodal-container input[type=text] {
+    position: relative;
+}
+
+/* line 67, ../sass/main.scss */
+.loginmodal-container input[type=text] {
     height: 44px;
     font-size: 16px;
     width: 100%;
@@ -70,97 +84,110 @@ footer {
     /* border-radius: 2px; */
     padding: 0 8px;
     box-sizing: border-box;
-    -moz-box-sizing: border-box; }
+    -moz-box-sizing: border-box;
+}
 
 /* line 84, ../sass/main.scss */
 input[type=password] {
-  height: 44px;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+    height: 44px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    /* border-radius: 2px; */
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
 
 /* line 99, ../sass/main.scss */
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+    border: 1px solid #b9b9b9;
+    border-top: 1px solid #a0a0a0;
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 /* line 107, ../sass/main.scss */
 .loginmodal {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  height: 36px;
-  padding: 0 8px;
-  /* border-radius: 3px; */
-  /* -webkit-user-select: none;
-    user-select: none; */ }
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    height: 36px;
+    padding: 0 8px;
+    /* border-radius: 3px; */
+    /* -webkit-user-select: none;
+      user-select: none; */
+}
 
 /* line 119, ../sass/main.scss */
 .loginmodal-submit {
-  /* border: 1px solid #3079ed; */
-  border: 0px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-  background-color: #4d90fe;
-  padding: 17px 0px;
-  font-family: roboto;
-  font-size: 14px;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */ }
-  /* line 129, ../sass/main.scss */
-  .loginmodal-submit:hover {
+    /* border: 1px solid #3079ed; */
+    border: 0px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #4d90fe;
+    padding: 17px 0px;
+    font-family: roboto;
+    font-size: 14px;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+/* line 129, ../sass/main.scss */
+.loginmodal-submit:hover {
     /* border: 1px solid #2f5bb7; */
     border: 0px;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     background-color: #357ae8;
-    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */ }
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
 
 /* line 138, ../sass/main.scss */
 .loginmodal-container a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity ease 0.5s; }
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity ease 0.5s;
+}
 
 /* line 148, ../sass/main.scss */
 .login-help {
-  font-size: 12px; }
+    font-size: 12px;
+}
 
 /* line 152, ../sass/main.scss */
 footer .row::after {
-  content: "";
-  display: block;
-  clear: both; }
+    content: "";
+    display: block;
+    clear: both;
+}
 
 /* line 158, ../sass/main.scss */
 .facebook, .imprint, .faq {
-  float: right;
-  padding-right: 1%;
-  padding-left: 1%; }
+    float: right;
+    padding-right: 1%;
+    padding-left: 1%;
+}
 
 /* line 164, ../sass/main.scss */
 a {
-  color: #777; }
+    color: #777;
+}
 
 /* line 167, ../sass/main.scss */
 a:focus, a:hover {
-  color: #777; }
+    color: #777;
+}
 
 #titel {
-  font-family:"Old English Text MT";
-  font-size: x-large;
+    font-family: "Old English Text MT";
+    font-size: x-large;
 }
