@@ -159,3 +159,8 @@ a {
 /* line 167, ../sass/main.scss */
 a:focus, a:hover {
   color: #777; }
+
+#titel {
+  font-family:"Old English Text MT";
+  font-size: x-large;
+}

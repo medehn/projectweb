@@ -20,7 +20,7 @@
         <div id="logo" class="col-xs-2 text-center">
             <img class=logoImg src="img\logo.jpg" alt="Logo">
         </div>
-        <div id="header1" class="col-xs-10 text-center">
+        <div id="header1" class="col-xs-6 text-center">
             <img class=headerImg src="img\header.jpg" alt="Header">
         </div>
     </div>

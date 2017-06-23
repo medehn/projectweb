@@ -38,9 +38,11 @@
                 <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Verein
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="menu-item dropdown"><a href="./geschichte.php">Geschichte </a>
+                        <li class="menu-item dropdown"><a href="./geschichte.php">Vereinsgeschichte </a>
                         </li>
                         <li class="menu-item dropdown"><a href="./mitglieder.php">Mitglieder </a>
+                        </li>
+                        <li class="menu-item dropdown"><a href="./lagerleben.php">Lagerleben </a>
                         </li>
                     </ul>
                 </li>
