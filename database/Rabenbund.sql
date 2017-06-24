@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 22. Jun 2017 um 16:57
+-- Erstellungszeit: 24. Jun 2017 um 16:44
 -- Server-Version: 10.1.21-MariaDB
 -- PHP-Version: 5.6.30
 
@@ -43,6 +43,15 @@ CREATE TABLE `benutzer` (
   `besucherid` int(11) DEFAULT NULL,
   `anumber` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Daten für Tabelle `benutzer`
+--
+
+INSERT INTO `benutzer` (`userid`, `fname`, `lname`, `username`, `userpassword`, `birthdate`, `email`, `adress`, `plz`, `ort`, `funktion`, `skills`, `interests`, `besucherid`, `anumber`) VALUES
+(1, 'Jason', 'Something', 'jasonman', 'raben&12', '1979-03-12', 'jason.79@gmai.com', 'Sonnenstraße', 6330, 'Kufstein', 'Noch nicht sicher', 'Bogenschießen, Boxen', 'Mittelalterliche Kultur, Natur, Schwertkampf', 1, '3a'),
+(2, 'Julia', 'Mauer', 'mauerbluemchen', 'geheim?123', '1985-08-23', 'mjuly@hotmail.com', 'Apfelgasse', 6330, 'Kufstein', 'Noch nicht sicher', 'Stricken, Backen, Schwimmen', 'Natur, Botanik', 2, '2'),
+(3, 'Hans', 'Hintermeer', 'schlagerlover23', '!loveschlag3r', '1990-02-02', 'hansi4ever@yahoo.de', 'Rehstraße', 6370, 'Kitzbühel', 'Lagerfeuerlieder singen', 'Gitarre spielen, Fechten, Jodeln', 'Mittelalterliche Kultur', 3, '45');
 
 -- --------------------------------------------------------
 
