@@ -2,7 +2,7 @@
  * Created by Anni on 13.06.17.
  */
 
-function formValidation(userpassword, username, adress, email) {
+function register() {
 
     var userpassword = document.registration.userpassword;
     var username = document.registration.username;
@@ -41,7 +41,7 @@ function formValidation(userpassword, username, adress, email) {
     function userName_validation(username) {
 
         var letters = /^[A-Za-z]+$/;
-        if (username != 0 && username.value.match(letters)) {
+        if (username != null && username.value.match(letters)) {
 
             return true;
 
@@ -72,7 +72,7 @@ function formValidation(userpassword, username, adress, email) {
 
         var formatformail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-        if (email.value.match(formatformail)) {
+        if (email.value.match(formatformail) && email != null) {
             return true;
         } else {
             alert("Bitte eine gültige e-mail Adresse eingeben");
