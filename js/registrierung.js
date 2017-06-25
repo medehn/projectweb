@@ -21,6 +21,7 @@ function formValidation(userpassword, username, adress, email) {
     }
 
     return false;
+}
 
     // Vorraussetzungen für das Passwort, mindestens Länge von 6
     function password_validation(userpassword, min) {
@@ -78,5 +79,5 @@ function formValidation(userpassword, username, adress, email) {
             email.focus();
             return false;
         }
-    }
+
 }

@@ -2,6 +2,7 @@
 include('php/nav.php'); ?>
 
 <script type="text/javascript" src="js/registrierung.js"></script>
+
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Registrierung</a></li>
