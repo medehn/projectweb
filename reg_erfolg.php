@@ -2,7 +2,7 @@
 include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
-    <li><a href="#">Über uns</a></li>
+    <li><a href="#">Lagerleben</a></li>
 </ol>
 <?php
 include('php\header.php')
@@ -16,13 +16,12 @@ include('php\header.php')
             <p><a href="profile.php" id="navlink">Mein Profil</a></p>
             <p><a href="events.php" id="navlink">Anmeldung Events</a></p>
         </div>
-        <div class="col-xs-6 text-left">
-            <br>
-            <br>
-            <br>
-            <h3 class="text-center">UNDER CONSTRUCTION</h3>
 
-            <img class="text-center" src="img\knight.png">
+        <div class="col-xs-6 text-left">
+
+            <p class="container-fluid text-center">
+                <br>
+            <p>Registrierung erfolgreich!</p>
         </div>
     </div>
 </div>
