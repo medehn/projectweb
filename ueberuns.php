@@ -1,11 +1,11 @@
 <?php
-include('php\nav.php'); ?>
+include('php/nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Über uns</a></li>
 </ol>
 <?php
-include('php\header.php')
+include('php/header.php')
 ?>
 
 
@@ -27,6 +27,6 @@ include('php\header.php')
     </div>
 </div>
 <?php
-include('php\footer.php')
+include('php/footer.php')
 ?>
 
