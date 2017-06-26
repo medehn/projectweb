@@ -1,5 +1,4 @@
 <?php
-include('php\nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Vereinsgeschichte</a></li>
