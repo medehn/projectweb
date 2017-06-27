@@ -26,10 +26,6 @@ session_start();
             <div class="col-xs-6 text-left">
                 <br>
                 <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
-                <p>Interesen: <?php echo $row['interests']; ?> </p>
-                <form> Interessen hinzufügen <input type="text"></form>
-                <button type="submit" name="submit" class="btn btn-labeled btn-success">
-                    <span class="btn-label"><i ></i></span>Absenden
                 </button>
 
 
