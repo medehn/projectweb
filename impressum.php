@@ -4,8 +4,9 @@ include('php\nav.php'); ?>
     <li class="active">Home</li>
     <li><a href="#">Impressum</a></li>
 </ol>
+
 <?php
-include('php\header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
 
 

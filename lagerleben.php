@@ -5,7 +5,7 @@ include('php/nav.php'); ?>
     <li><a href="#">Lagerleben</a></li>
 </ol>
 <?php
-include('php/header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
 
 

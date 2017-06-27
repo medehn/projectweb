@@ -5,9 +5,11 @@ include('php/nav.php'); ?>
     <li><a href="#">Passwort vergessen</a></li>
 
 </ol>
+
 <?php
-include('php/header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
+
 <!--Seiten-Navigation-->
 <div class="container-fluid">
     <div class="row content">

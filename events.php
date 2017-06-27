@@ -8,9 +8,11 @@ include('php/nav.php'); ?>
     <li><a href="#">Anmeldung Events</a></li>
 
 </ol>
+
 <?php
-include('php/header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
+
 <!--Seiten-Navigation-->
 <div class="container-fluid text-center">
     <div class="row content">

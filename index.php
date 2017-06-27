@@ -7,8 +7,9 @@ include('php/nav.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
 </ol>
+
 <?php
-include('php/header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
 
 
