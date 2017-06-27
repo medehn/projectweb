@@ -3,13 +3,13 @@
     <div class="row">
 
         <p class="imprint">
-            <a href="./impressum.php" class="btn btn-primary btn-info" role="button">Impressum</a>
+            <a href="./impressum.php" class="list-group-item facebook-like" role="button">Impressum</a>
         </p>
 
         <p class="facebook">
-            <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Facebook</button>
-        <?php include ('facebook.php')
-    ?>
+            <a href="https://www.facebook.com/rabenbundzulandeck" class="list-group-item facebook-like">
+                <i class="fa fa-facebook-square"></i> Facebook</a>
+
 
     </div>
 </footer>

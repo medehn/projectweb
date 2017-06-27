@@ -177,6 +177,7 @@ footer .row::after {
     padding-left: 1%;
 }
 
+
 /* line 164, ../sass/main.scss */
 a {
     color: #777;
@@ -191,3 +192,9 @@ a:focus, a:hover {
     font-family: "Old English Text MT";
     font-size: x-large;
 }
+
+/* Facebook */
+a.facebook-like i,.facebook-like h4.list-group-item-heading { color:#3b5998; }
+a.facebook-like:hover { background-color:#3b5998; }
+a.facebook-like:hover * { color:#FFF; }
+
