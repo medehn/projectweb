@@ -2,11 +2,9 @@
 session_start();
 include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
-<<<<<<< HEAD
+
 include('php'.DIRECTORY_SEPARATOR.'nav.php');
-=======
-include('php/nav_logout.php');
->>>>>>> 6370228ef822ef513e621f32c8fbf80070c9b84b
+
 ?>
 
 <ol class="breadcrumb">
@@ -16,11 +14,8 @@ include('php/nav_logout.php');
 </ol>
 
 <?php
-<<<<<<< HEAD
+
 include('php'.DIRECTORY_SEPARATOR.'header.php');
-=======
-include('php'.DIRECTORY_SEPARATOR.'header.php')
->>>>>>> 6370228ef822ef513e621f32c8fbf80070c9b84b
 ?>
 
 <!--Seiten-Navigation-->

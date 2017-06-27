@@ -1,9 +1,8 @@
 <?php
-<<<<<<< HEAD
+
 include('php'.DIRECTORY_SEPARATOR.'nav.php'); ?>
-=======
-include('php\nav_logout.php'); ?>
->>>>>>> 6370228ef822ef513e621f32c8fbf80070c9b84b
+
+
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Lagerleben</a></li>
