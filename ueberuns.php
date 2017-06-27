@@ -1,5 +1,5 @@
 <?php
-include('php/nav.php'); ?>
+include('php/nav_login.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Über uns</a></li>

@@ -2,7 +2,7 @@
 session_start();
 include('php/detailsProfile.php');
 
-include('php/nav.php');
+include('php/nav_logout.php');
 ?>
 
 <ol class="breadcrumb">

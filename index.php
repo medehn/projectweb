@@ -3,7 +3,7 @@ todo: Anpassung der Index-Seite für "eingeloggt" vs "nicht eingeloggt"
 -->
 
 <?php
-include('php/nav.php'); ?>
+include('php/nav_logout.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
 </ol>

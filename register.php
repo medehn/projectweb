@@ -1,7 +1,7 @@
 <!-- todo: Bei Absenden des Formulars soll Email gesendet werden-->
 
 <?php
-include('php/nav.php'); ?>
+include('php/nav_login.php'); ?>
 
 <script type="text/javascript" src="js/registrierung.js"></script>
 
