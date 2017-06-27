@@ -63,8 +63,8 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <!-- Login mit Lightbox-->
-                <li><a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal"
-                                      data-target="#login-modal">  Login</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out" data-toggle="modal"
+                                      data-target="#login-modal">  Logout</span></a></li>
                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
                      aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
