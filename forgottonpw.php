@@ -1,5 +1,5 @@
 <?php
-include('php/nav_logout.php'); ?>
+include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Passwort vergessen</a></li>
@@ -58,5 +58,5 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 <br/>
 
 <?php
-include('php/footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>

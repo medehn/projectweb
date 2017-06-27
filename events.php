@@ -1,7 +1,7 @@
 <!-- Seite zur Anmeldung für Events-->
 <?php
 
-include('php/nav_logout.php'); ?>
+include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
 
 <ol class="breadcrumb">
     <li class="active">Home</li>
@@ -162,5 +162,5 @@ include('php' . DIRECTORY_SEPARATOR . 'header.php')
 
 <!--Footer mit Facebook, FAQ, Impressum-->
 <?php
-include('php/footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
