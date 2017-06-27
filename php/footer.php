@@ -2,12 +2,14 @@
 <footer class="container-fluid">
     <div class="row">
 
-        <p class="faq">
-            <button type="button" class="btn btn-default" href="">FAQ</button>
+        <p class="imprint">
+            <a href="./impressum.php" class="btn btn-primary btn-info" role="button">Impressum</a>
         </p>
+
         <p class="facebook">
             <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Facebook</button>
-        <?php include ('facebook.php')?>
+        <?php include ('facebook.php')
+    ?>
 
     </div>
 </footer>
