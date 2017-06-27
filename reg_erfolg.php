@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
+include('php'.DIRECTORY_SEPARATOR.'nav.php'); ?>
+=======
 include('php\nav_logout.php'); ?>
+>>>>>>> 6370228ef822ef513e621f32c8fbf80070c9b84b
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Lagerleben</a></li>
@@ -27,6 +31,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
     </div>
 </div>
 <?php
-include('php\footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
 
