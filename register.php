@@ -100,8 +100,8 @@ include('php/header.php')
                                              Profil Seite weitergeleitet wird oder auf die reg_erfolg-->
 
                                             <button type="submit" name="submit" class="btn btn-labeled btn-success">
-                                                <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Absenden
-                                                <a href="reg_erfolg.php"></a>
+                                                <span class="btn-label"><i class="glyphicon glyphicon-ok"<a href="reg_erfolg.php"></a></i></span>Absenden
+
                                             </button>
                                     </h2>
                                 </div>

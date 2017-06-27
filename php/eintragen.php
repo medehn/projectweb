@@ -41,3 +41,5 @@ if(!$result)
     echo ' Eingetragen';
 }
 
+header('location: ../reg_erfolg.php');
+
