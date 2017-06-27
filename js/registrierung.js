@@ -23,6 +23,7 @@ function register() {
     return false;
 }
 
+
     // Vorraussetzungen für das Passwort, mindestens Länge von 6
     function password_validation(userpassword, min) {
         var userpassword_length = userpassword.value.length;
