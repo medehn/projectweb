@@ -1,11 +1,12 @@
 <?php
-include('php/nav.php'); ?>
+include('php/nav_logout.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Mitglieder</a></li>
 </ol>
+
 <?php
-include('php/header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
 
 

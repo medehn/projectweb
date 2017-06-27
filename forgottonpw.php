@@ -1,13 +1,15 @@
 <?php
-include('php/nav.php'); ?>
+include('php/nav_logout.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Passwort vergessen</a></li>
 
 </ol>
+
 <?php
-include('php/header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
+
 <!--Seiten-Navigation-->
 <div class="container-fluid">
     <div class="row content">

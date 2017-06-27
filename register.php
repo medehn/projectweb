@@ -1,18 +1,19 @@
 <!-- todo: Bei Absenden des Formulars soll Email gesendet werden-->
 
 <?php
-include('php/nav.php'); ?>
+include('php/nav_login.php'); ?>
 
 <script type="text/javascript" src="js/registrierung.js"></script>
 
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Registrierung</a></li>
-
 </ol>
+
 <?php
-include('php/header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
+
 <!--Seiten-Navigation-->
 <div class="container-fluid text-center">
     <div class="row content">
