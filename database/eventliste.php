@@ -28,7 +28,7 @@ mysqli_close($connection);
 
             <?php
             if ($results->num_rows > 0) {
-                echo "<table border =1><tr><th>Vorname   </th><th>Nachname   </th><th>Job   </th><th>Ort   </th></tr>";
+                echo "<table border =1><tr><th>Event   </th><th>Tage   </th><th>Auto(s)   </th><th>Sitzlätze   </th>  <th>Sonstiges   </th></tr>";
                 // output data of each row
                 while ($row = $results->fetch_assoc()) {
                     echo "<tr><td>" . $row["eventname"] . "</td><td>" . $row["tage"] . "</td><td>" . $row["car"]  . "</td><td>" . $row["carseats"] ."</td><td>" . $row["sonstiges"] ."</td></tr>";
