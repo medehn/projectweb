@@ -1,8 +1,6 @@
 <?php
 session_start();
-include('php/detailsProfile.php');
 
-include('php/nav_logout.php');
 ?>
 
 <ol class="breadcrumb">
@@ -12,7 +10,6 @@ include('php/nav_logout.php');
 </ol>
 
 <?php
-include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
 
 <!--Seiten-Navigation-->
@@ -27,17 +24,13 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 
         <form method="get" action="php/detailsProfile.php">
             <div class="col-xs-6 text-left">
-                <h1>Profil von <?php echo $row['fname'], "&nbsp", $row['lname']; ?></h1>
                 <br>
-                <p>Name: <?php echo $row['username']; ?> </p>
-                <p>Funktion: <?php echo $row['funktion']; ?> </p>
                 <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
                 <p>Interesen: <?php echo $row['interests']; ?> </p>
                 <form> Interessen hinzufügen <input type="text"></form>
                 <button type="submit" name="submit" class="btn btn-labeled btn-success">
                     <span class="btn-label"><i ></i></span>Absenden
                 </button>
-            </div>
 
 
         </form>
@@ -52,5 +45,4 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
     </form>
 </div>
 <?php
-include('php/footer.php')
 ?>

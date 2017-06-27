@@ -1,11 +1,17 @@
 <?php
 
+
 session_start();
 if (isset($_SESSION["username"])) {
 include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
+
+
+
+
+
 <ol class="breadcrumb">
     <li class="active">Home</li>
-    <li><a href="#">Lagerleben</a></li>
+    <li><a href="#">Erfolg!</a></li>
 </ol>
 
 <?php
@@ -30,6 +36,7 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
     </div>
 </div>
 <?php
+
 include('php'.DIRECTORY_SEPARATOR.'footer.php');
 
 } else {
@@ -40,5 +47,6 @@ include('php'.DIRECTORY_SEPARATOR.'footer.php');
     //header( "Location: index.php");
     echo "Loge dich ein";
 }
+
 ?>
 

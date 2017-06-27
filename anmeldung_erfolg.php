@@ -2,7 +2,6 @@
 include('php\nav_logout.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
-    <li><a href="#">Lagerleben</a></li>
 </ol>
 
 <?php
