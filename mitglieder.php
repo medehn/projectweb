@@ -1,5 +1,5 @@
 <?php
-include('php/nav_logout.php'); ?>
+include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Mitglieder</a></li>
@@ -28,6 +28,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
     </div>
 </div>
 <?php
-include('php/footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
 

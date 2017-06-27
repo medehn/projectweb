@@ -18,7 +18,7 @@ todo: Anpassung der Index-Seite für "eingeloggt" vs "nicht eingeloggt"
 </head>
 
 <?php
-include('php/nav_login.php'); ?>
+include('php'.DIRECTORY_SEPARATOR.'nav_login.php'); ?>
 
 
 <ol class="breadcrumb">
@@ -48,6 +48,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
     </div>
 </div>
 <?php
-include('php/footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
 

@@ -1,5 +1,5 @@
 <?php
-include('php\nav_login.php'); ?>
+include('php'.DIRECTORY_SEPARATOR.'nav_login.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Impressum</a></li>
@@ -59,6 +59,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
     </div>
 </div>
 <?php
-include('php\footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
 

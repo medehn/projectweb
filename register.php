@@ -1,7 +1,7 @@
 <!-- todo: Bei Absenden des Formulars soll Email gesendet werden-->
 
 <?php
-include('php/nav_login.php'); ?>
+include('php'.DIRECTORY_SEPARATOR.'nav_login.php'); ?>
 
 <script type="text/javascript" src="js/registrierung.js"></script>
 
@@ -115,5 +115,5 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
     </div>
 </div>
 <?php
-include('php/footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
