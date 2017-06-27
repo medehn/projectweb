@@ -12,7 +12,7 @@ if (isset($_POST) & !empty($_POST)) {
     $userpassword = $_POST['userpassword'];
 
     $sql = "SELECT * FROM `Benutzer` WHERE username = '{$username}' AND userpassword = '{$userpassword}'";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($connection, $sql);
     $count = mysqli_num_rows($result);
 
     $_SESSION['username'] = $username;

@@ -3,7 +3,7 @@ session_start();
 include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
 
-include('php'.DIRECTORY_SEPARATOR.'nav.php');
+include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
 
 ?>
 
