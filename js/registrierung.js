@@ -2,7 +2,7 @@
  * Created by Anni on 13.06.17.
  */
 
-function register() {
+function registrierung() {
 
     var userpassword = document.registration.userpassword;
     var username = document.registration.username;
@@ -23,6 +23,7 @@ function register() {
     return false;
 }
 
+//registrierung();
 
     // Vorraussetzungen für das Passwort, mindestens Länge von 6
     function password_validation(userpassword, min) {
