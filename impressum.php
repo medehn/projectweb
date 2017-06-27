@@ -1,11 +1,12 @@
 <?php
-include('php\nav.php'); ?>
+include('php'.DIRECTORY_SEPARATOR.'nav_login.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Impressum</a></li>
 </ol>
+
 <?php
-include('php\header.php')
+include('php'.DIRECTORY_SEPARATOR.'header.php')
 ?>
 
 
@@ -58,6 +59,6 @@ include('php\header.php')
     </div>
 </div>
 <?php
-include('php\footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
 

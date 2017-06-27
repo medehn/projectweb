@@ -10,5 +10,4 @@ $result = mysqli_query($connection, "SELECT * FROM `Benutzer` WHERE username = '
 
 $row = mysqli_fetch_assoc($result);
 
-
 ?>

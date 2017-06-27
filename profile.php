@@ -1,8 +1,10 @@
 <?php
 session_start();
-include('php/detailsProfile.php');
+include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
-include('php/nav.php');
+
+include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
+
 ?>
 
 <ol class="breadcrumb">
@@ -10,8 +12,10 @@ include('php/nav.php');
     <li><a href="#">Profil</a></li>
 
 </ol>
+
 <?php
-include('php/header.php');
+
+include('php'.DIRECTORY_SEPARATOR.'header.php');
 ?>
 
 <!--Seiten-Navigation-->
@@ -26,18 +30,20 @@ include('php/header.php');
 
         <form method="get" action="php/detailsProfile.php">
             <div class="col-xs-6 text-left">
-                <h1>Profil von <?php echo $row['fname'], "&nbsp", $row['lname']; ?></h1>
+                <h1>Profil von <?php echo $row['fname'], "&nbsp", $row['lname']; ?></h1> <!-- Name aus Datenbank geholt-->
                 <br>
-                <p>Name: <?php echo $row['username']; ?> </p>
-                <p>Funktion: <?php echo $row['funktion']; ?> </p>
+                <p>Name: <?php echo $row['username']; ?> </p> <!-- Username aus Datenbank geholt-->
+                <p>Funktion: <?php echo $row['funktion']; ?> </p> <!-- Funktion aus Datenbank geholt-->
+                <br>
                 <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
-                <p>Interesen: <?php echo $row['interests']; ?> </p>
-                <form> Interessen hinzufügen <input type="text"></form>
-                <button type="submit" name="submit" class="btn btn-labeled btn-success">
-                    <span class="btn-label"><i ></i></span>Absenden
+               <br>
+                <p>Interessen: <?php echo $row['interests']; ?> </p>
+                <br>
+                <button type="submit" name="modify" class="btn btn-labeled btn-success">
+                    <span class="btn-label"></span>Bearbeiten
                 </button>
-            </div>
 
+            </div>
 
         </form>
     </div>
@@ -51,5 +57,5 @@ include('php/header.php');
     </form>
 </div>
 <?php
-include('php/footer.php')
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
