@@ -5,7 +5,7 @@ include('php'.DIRECTORY_SEPARATOR.'nav.php'); ?>
 
 <ol class="breadcrumb">
     <li class="active">Home</li>
-    <li><a href="#">Lagerleben</a></li>
+    <li><a href="#">Erfolg!</a></li>
 </ol>
 
 <?php
