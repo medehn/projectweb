@@ -32,7 +32,10 @@ include('php/header.php');
                 <p>Funktion: <?php echo $row['funktion']; ?> </p>
                 <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
                 <p>Interesen: <?php echo $row['interests']; ?> </p>
-
+                <form> Interessen hinzufügen <input type="text"></form>
+                <button type="submit" name="submit" class="btn btn-labeled btn-success">
+                    <span class="btn-label"><i ></i></span>Absenden
+                </button>
             </div>
 
 
