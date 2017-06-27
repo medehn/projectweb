@@ -7,7 +7,7 @@
         </p>
 
         <p class="facebook">
-            <a href="https://www.facebook.com/rabenbundzulandeck" class="list-group-item facebook-like">
+            <a target="_blank" href="https://www.facebook.com/rabenbundzulandeck" class="list-group-item facebook-like">
                 <i class="fa fa-facebook-square"></i> Facebook</a>
 
 
