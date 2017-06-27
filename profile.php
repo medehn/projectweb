@@ -1,5 +1,9 @@
 <?php
 session_start();
+include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
+
+
+include('php'.DIRECTORY_SEPARATOR.'nav.php');
 
 ?>
 
@@ -10,6 +14,8 @@ session_start();
 </ol>
 
 <?php
+
+include('php'.DIRECTORY_SEPARATOR.'header.php');
 ?>
 
 <!--Seiten-Navigation-->
@@ -24,10 +30,20 @@ session_start();
 
         <form method="get" action="php/detailsProfile.php">
             <div class="col-xs-6 text-left">
+                <h1>Profil von <?php echo $row['fname'], "&nbsp", $row['lname']; ?></h1> <!-- Name aus Datenbank geholt-->
+                <br>
+                <p>Name: <?php echo $row['username']; ?> </p> <!-- Username aus Datenbank geholt-->
+                <p>Funktion: <?php echo $row['funktion']; ?> </p> <!-- Funktion aus Datenbank geholt-->
                 <br>
                 <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
+               <br>
+                <p>Interessen: <?php echo $row['interests']; ?> </p>
+                <br>
+                <button type="submit" name="modify" class="btn btn-labeled btn-success">
+                    <span class="btn-label"></span>Bearbeiten
                 </button>
 
+            </div>
 
         </form>
     </div>
@@ -41,4 +57,5 @@ session_start();
     </form>
 </div>
 <?php
+include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
