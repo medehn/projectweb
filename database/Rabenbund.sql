@@ -26,6 +26,10 @@ SET time_zone = "+00:00";
 -- Tabellenstruktur für Tabelle `benutzer`
 --
 
+CREATE Database Rabenbund;
+
+Use Rabenbund;
+
 CREATE TABLE `benutzer` (
   `userid` int(100) UNSIGNED NOT NULL,
   `fname` varchar(20) NOT NULL,
