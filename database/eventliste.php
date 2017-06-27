@@ -2,9 +2,10 @@
 
 include "dbNewConnection.php";
 
-$query = 'SELECT * FROM events';
+$sql = 'SELECT eventname, tage,car,carseats,sonstiges
+          FROM events';
 
-$results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
+$results = mysqli_query($connection, $sql) or die('Abfrage konnte nicht verarbeitet werden');
 
 mysqli_close($connection);
 
@@ -12,10 +13,17 @@ mysqli_close($connection);
 ?>
 
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title></title>
+</head>
+
+<body>
 <section>
     <div class="container-fluid text-center">
 
-        <h3>Liste der Franzosen in Tirol</h3>
+        <h3>Liste der anstehenden Events</h3>
         <ul>
 
             <?php
@@ -23,7 +31,7 @@ mysqli_close($connection);
                 echo "<table border =1><tr><th>Vorname   </th><th>Nachname   </th><th>Job   </th><th>Ort   </th></tr>";
                 // output data of each row
                 while ($row = $results->fetch_assoc()) {
-                    echo "<tr><td>" . $row["vname"] . "</td><td>" . $row["nname"] . "</td><td>" . $row["job"]  . "</td><td>" . $row["ort"] ."</td></tr>";
+                    echo "<tr><td>" . $row["eventname"] . "</td><td>" . $row["tage"] . "</td><td>" . $row["car"]  . "</td><td>" . $row["carseats"] ."</td><td>" . $row["sonstiges"] ."</td></tr>";
                 }
                 echo "</table>";
             } else {
@@ -36,3 +44,5 @@ mysqli_close($connection);
     </div>
 
 </section>
+</body>
+</html>

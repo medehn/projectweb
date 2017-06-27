@@ -1,7 +1,7 @@
 <?php
 
 
-include "Rabenbund.sql";
+//include "Rabenbund.sql";
 include "dbNewConnection.php";
 
 //define ('DB_HOST','localhost');
@@ -19,7 +19,7 @@ include "dbNewConnection.php";
 //
 //);
 
-$sql = "SELECT */*fname,lname,birthdate,email,adress,anumber,plz,ort */
+$query = "SELECT fname,lname,birthdate,email,adress,anumber,plz,ort
           FROM benutzer;";
 
 
@@ -31,7 +31,13 @@ $sql = "SELECT */*fname,lname,birthdate,email,adress,anumber,plz,ort */
 
 ?>
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title></title>
+</head>
 
+<body>
 <section>
     <div class="container-fluid text-center">
 
@@ -64,16 +70,16 @@ $sql = "SELECT */*fname,lname,birthdate,email,adress,anumber,plz,ort */
             echo "</table>";
 
             mysqli_free_result( $db_erg );
-//            if ($results->num_rows > 0) {
-//                echo "<table border =1><tr><th>Vorname   </th><th>Nachname   </th><th>Job   </th><th>Ort   </th></tr>";
-//                // output data of each row
-//                while ($row = $results->fetch_assoc()) {
-//                    echo "<tr><td>" . $row["fname"] . "</td><td>" . $row["lname"] . "</td><td>" . $row["birthdate"]  . "</td><td>" . $row["email"]  . "</td><td>"  . $row["adress"]  ."</td><td>"  . $row["anumber"]  ."</td><td>"  . $row["plz"]  ."</td><td>"  . $row["ort"]  ."</td></tr>";
-//                }
-//                echo "</table>";
-//            } else {
-//                echo "0 results";
-//            }
+            //            if ($results->num_rows > 0) {
+            //                echo "<table border =1><tr><th>Vorname   </th><th>Nachname   </th><th>Job   </th><th>Ort   </th></tr>";
+            //                // output data of each row
+            //                while ($row = $results->fetch_assoc()) {
+            //                    echo "<tr><td>" . $row["fname"] . "</td><td>" . $row["lname"] . "</td><td>" . $row["birthdate"]  . "</td><td>" . $row["email"]  . "</td><td>"  . $row["adress"]  ."</td><td>"  . $row["anumber"]  ."</td><td>"  . $row["plz"]  ."</td><td>"  . $row["ort"]  ."</td></tr>";
+            //                }
+            //                echo "</table>";
+            //            } else {
+            //                echo "0 results";
+            //            }
 
 
             ?>
@@ -81,3 +87,5 @@ $sql = "SELECT */*fname,lname,birthdate,email,adress,anumber,plz,ort */
     </div>
 
 </section>
+</body>
+</html>
