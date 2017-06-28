@@ -27,10 +27,10 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
             //include "../database/Rabenbund.sql";
             include(__DIR__.'/database/dbNewConnection.php');
 
-            define ('DB_HOST','localhost');
-            define('DB_NAME', 'rabenbund');
-            define('DB_USER','Project');
-            define('DB_PASS','projectweb');
+//            define ('DB_HOST','localhost');
+//            define('DB_NAME', 'rabenbund');
+//            define('DB_USER','Project');
+//            define('DB_PASS','projectweb');
 
 
 
@@ -83,7 +83,7 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 //                        echo "</table>";
 
                         require_once ('database/dbNewConnection.php');
-                        $db_link = mysqli_connect('localhost', 'Project','projectweb','Rabenbund');
+                        $db_link = mysqli_connect('127.0.0.1', 'root','','rabenbund');
 
                         $db_erg = mysqli_query( $db_link, $query );
                          if ( ! $db_erg )
