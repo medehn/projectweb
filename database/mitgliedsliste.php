@@ -1,7 +1,7 @@
 <?php
 
 
-//include "Rabenbund.sql";
+include "Rabenbund.sql";
 include "dbNewConnection.php";
 
 //define ('DB_HOST','localhost');
@@ -19,12 +19,29 @@ include "dbNewConnection.php";
 //
 //);
 
+$host = "localhost";
+$user = "testuser";
+$pass = "testpass";
+$db_name = "Rabenbund.sql";
+
+//creating connection
+$connection = mysqli_connect($host,$user,$pass,$db_name);
+
+//test if connection failed
+if(mysqli_connect_errno()){
+    die("Verbindung fehlgeschlagen: "
+        . mysqli_connect_error()
+        ." ("
+        . mysqli_connect_errno(). ")");
+}
+
 $query = "SELECT fname,lname,birthdate,email,adress,anumber,plz,ort
           FROM benutzer;";
 
 
 
-//$results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
+$results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
+$all_property = array();
 //
 //mysqli_close($connection);
 
@@ -44,9 +61,31 @@ $query = "SELECT fname,lname,birthdate,email,adress,anumber,plz,ort
         <h3>Liste der Mitglieder des Vereins</h3>
         <ul>
 
+
+
+
+
             <?php
 
-            $db_erg = mysqli_query( $db_link, $sql );
+            echo '<table class="data-table">
+        <tr class="data-heading">';  //initialize table tag
+            while ($property = mysqli_fetch_field($result)) {
+                echo '<td>' . $property->name . '</td>';  //get field name for header
+                array_push($all_property, $property->name);  //save those to array
+            }
+            echo '</tr>'; //end tr tag
+
+            //showing all data
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<tr>";
+                foreach ($all_property as $item) {
+                    echo '<td>' . $row[$item] . '</td>'; //get items using property value
+                }
+                echo '</tr>';
+            }
+            echo "</table>";
+
+           /* $db_erg = mysqli_query( $db_link, $sql );
             if ( ! $db_erg )
             {
                 die('Ungültige Abfrage: ' . mysqli_error());
@@ -69,7 +108,10 @@ $query = "SELECT fname,lname,birthdate,email,adress,anumber,plz,ort
             }
             echo "</table>";
 
-            mysqli_free_result( $db_erg );
+            mysqli_free_result( $db_erg );*/
+
+
+
             //            if ($results->num_rows > 0) {
             //                echo "<table border =1><tr><th>Vorname   </th><th>Nachname   </th><th>Job   </th><th>Ort   </th></tr>";
             //                // output data of each row
