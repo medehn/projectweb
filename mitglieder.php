@@ -24,7 +24,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
             <?php
 
 
-            //include "../database/Rabenbund.sql";
             include(__DIR__.'/database/dbNewConnection.php');
 
 //            define ('DB_HOST','localhost');
@@ -88,11 +87,11 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
                         $db_erg = mysqli_query( $db_link, $query );
                          if ( ! $db_erg )
                          {
-                             die('Ungültige Abfrage: ' . mysqli_error(1));
+                             die('Ungültige Abfrage: ' . mysqli_error(mysqli_connect('127.0.0.1','root','','rabenbund')));
                          }
 
                          echo '<table border="1">';
-                         while ($zeile = mysqli_fetch_array( $db_erg, MYSQL_ASSOC))
+                         while ($zeile = mysqli_fetch_array( $db_erg, 1))
                          {
                              echo "<tr>";
                              //echo "<td>". $zeile['userid'] . "</td>";
