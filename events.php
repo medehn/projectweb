@@ -1,7 +1,14 @@
 <!-- Seite zur Anmeldung für Events-->
 <?php
+session_start();
+if (isset($_SESSION["username"])) {
 
-include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
+    include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
+
+
+    include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
+
+
 
 <ol class="breadcrumb">
     <li class="active">Home</li>
@@ -163,4 +170,16 @@ include('php' . DIRECTORY_SEPARATOR . 'header.php')
 <!--Footer mit Facebook, FAQ, Impressum-->
 <?php
 include('php'.DIRECTORY_SEPARATOR.'footer.php')
+?>
+
+    <?php
+} else {
+    ?>
+
+
+    <?php
+    //header( "Location: index.php");
+    echo "Loge dich ein";
+}
+
 ?>

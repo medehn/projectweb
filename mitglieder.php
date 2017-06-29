@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (isset($_SESSION["username"])) {
+
+include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
+
+
 include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
 <ol class="breadcrumb">
     <li class="active">Home</li>
@@ -115,3 +121,14 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
 
+    <?php
+} else {
+    ?>
+
+
+    <?php
+    //header( "Location: index.php");
+    echo "Loge dich ein";
+}
+
+?>

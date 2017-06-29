@@ -5,6 +5,9 @@ include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
 include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
 
+
+if (isset($_SESSION["username"])) {
+
 ?>
 
 <ol class="breadcrumb">
@@ -59,3 +62,12 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
 <?php
 include('php'.DIRECTORY_SEPARATOR.'footer.php')
 ?>
+    <?php
+} else {
+    ?>
+
+
+    <?php
+    //header( "Location: index.php");
+    echo "Loge dich ein";
+}
