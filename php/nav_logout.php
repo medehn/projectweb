@@ -75,8 +75,9 @@
                             <?php if (isset($fmsg)) { ?>
                                 <div class="alert alert-success" role="alert"> <?php echo $fmsg; ?></div>
                             <?php } ?>
-                            <h1>Einloggen</h1><br>
-                            <form method="post" class="form-signin" id="login" action="php/login.php">
+                            <h1>Ausloggen</h1><br>
+                            <!-- Auslagvorgang findet hier statt-->
+                            <form method="post" class="form-signin" id="logout" action="index.php">
                                 <input type="text" name="username" id="username" placeholder="Username">
                                 <input type="password" name="userpassword" id="userpassword" placeholder="Password">
                                 <input type="submit" name="Submit" class="login loginmodal-submit"
