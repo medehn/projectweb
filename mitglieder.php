@@ -1,5 +1,6 @@
 <?php
 session_start();
+//hier wird geprüft ob der user schon eingelogt ist wenn nicht kommt er ans ende der Seite...
 if (isset($_SESSION["username"])) {
 
 include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
@@ -123,10 +124,7 @@ include('php'.DIRECTORY_SEPARATOR.'footer.php')
 
     <?php
 } else {
-    ?>
-
-
-    <?php
+    //... und wird hier weitergeleitet auf eine neue Seite mit Message
     //header( "Location: index.php");
     echo "Loge dich ein";
 }
