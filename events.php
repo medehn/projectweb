@@ -27,9 +27,11 @@ include('php' . DIRECTORY_SEPARATOR . 'header.php')
         <div class="col-xs-2 sidenav">
             <p><a href="profile.php">Mein Profil</a></p>
             <p><a href="events.php">Anmeldung Events</a></p>
+            <p><a href="eventliste.php">Liste Events</a></p>
         </div>
         <div class="col-xs-10 text-left">
             <form class="form-horizontal" action="php/eintragenEvents.php" method="post">
+
                     <!-- Formular Name -->
                     <h3>Anmeldung Lager</h3>
 
@@ -163,6 +165,7 @@ include('php' . DIRECTORY_SEPARATOR . 'header.php')
                             </div>
                     </div>
                 </div>
+
             </form>
         </div>
     </div>
@@ -175,9 +178,8 @@ include('php'.DIRECTORY_SEPARATOR.'footer.php')
 
     <?php
 } else {
-//... und wird hier weitergeleitet auf eine neue Seite mit Message
-    //header( "Location: index.php");
-    echo "Loge dich ein";
+    //... und wird hier weitergeleitet auf eine neue Seite mit Message
+    header('location: bitteeinloggen.php');
 }
 
 ?>
