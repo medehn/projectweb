@@ -75,7 +75,7 @@
                             <?php if (isset($fmsg)) { ?>
                                 <div class="alert alert-success" role="alert"> <?php echo $fmsg; ?></div>
                             <?php } ?>
-                            <h1>Ausloggen</h1><br>
+                            <h1>Willst du dich ausloggen?</h1><br>
                             <!-- Auslagvorgang findet hier statt-->
                             <form method="post" class="form-signin" id="logout" action="php/logout.php">
 
@@ -83,15 +83,12 @@
                                        value="Logout">
                             </form>
 
-                            <div class="login-help">
-                                <a href="register.php">Registrierung</a> - <a href="forgottonpw.php">Passwort
-                                    vergessen</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </ul>
+
         </div>
 </nav>
 
