@@ -12,7 +12,7 @@ if (isset($_SESSION["username"])) {
 
     <?php
     //header( "Location: index.php");
-    echo "Loge dich ein";
+    echo "Logge dich bitte ein";
 }
 
 ?>

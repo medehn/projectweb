@@ -78,10 +78,9 @@
                             <h1>Ausloggen</h1><br>
                             <!-- Auslagvorgang findet hier statt-->
                             <form method="post" class="form-signin" id="logout" action="php/logout.php">
-                                <input type="text" name="username" id="username" placeholder="Username">
-                                <input type="password" name="userpassword" id="userpassword" placeholder="Password">
-                                <input type="submit" name="Submit" class="login loginmodal-submit"
-                                       value="Login">
+
+                                <input type="submit" name="Submit" class="logout logoutmodal-submit"
+                                       value="Logout">
                             </form>
 
                             <div class="login-help">

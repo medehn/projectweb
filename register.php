@@ -18,8 +18,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-xs-2 sidenav">
-            <p><a href="profile.php">Mein Profil</a></p>
-            <p><a href="events.php">Anmeldung Events</a></p>
         </div>
         <div class="col-xs-6 text-left">
             <div class="container">

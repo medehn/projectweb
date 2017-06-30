@@ -65,7 +65,7 @@ include('php'.DIRECTORY_SEPARATOR.'footer.php')
     <?php
 } else {
     //... und wird hier weitergeleitet auf eine neue Seite mit Message
-    echo "Loge dich ein";
+    header('location: bitteeinloggen.php');
 }
 
 ?>
