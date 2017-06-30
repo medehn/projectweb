@@ -72,37 +72,29 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
                              die('Ungültige Abfrage: ' . mysqli_error(mysqli_connect('127.0.0.1','root','','rabenbund')));
                          }
 
-                         echo '<table border="1">';
-                         while ($zeile = mysqli_fetch_array( $db_erg, 1))
-                         {
-                             echo "<tr>";
-                             //echo "<td>". $zeile['userid'] . "</td>";
-                             echo "<td>". $zeile['fname'] . "</td>";
-                             echo "<td>". $zeile['lname'] . "</td>";
-                             echo "<td>". $zeile['birthdate'] . "</td>";
-                             //echo "<td>". $zeile['email'] . "</td>";
-                             //echo "<td>". $zeile['adress'] . "</td>";
-                             //echo "<td>". $zeile['anumber'] . "</td>";
-                             echo "<td>". $zeile['plz'] . "</td>";
-                             echo "<td>". $zeile['ort'] . "</td>";
-                             echo "</tr>";
-                         }
-                         echo "</table>";
+                        if ($results->num_rows > 0) {
+
+                            echo "<table border =1><tr><th>Vorname   </th><th>Nachname   </th><th>Geburtstag   </th><th>PLZ   </th><th>Ort   </th></tr>";
+
+                            while ($zeile = mysqli_fetch_array($db_erg, 1)) {
+                                echo "<tr>";
+                                //echo "<td>". $zeile['userid'] . "</td>";
+                                echo "<td>" . $zeile['fname'] . "</td>";
+                                echo "<td>" . $zeile['lname'] . "</td>";
+                                echo "<td>" . $zeile['birthdate'] . "</td>";
+                                //echo "<td>". $zeile['email'] . "</td>";
+                                //echo "<td>". $zeile['adress'] . "</td>";
+                                //echo "<td>". $zeile['anumber'] . "</td>";
+                                echo "<td>" . $zeile['plz'] . "</td>";
+                                echo "<td>" . $zeile['ort'] . "</td>";
+                                echo "</tr>";
+                            }
+                            echo "</table>";
+                        }else{
+                            echo "0 results";
+                        }
 
                          mysqli_free_result( $db_erg );
-
-
-
-                        //            if ($results->num_rows > 0) {
-                        //                echo "<table border =1><tr><th>Vorname   </th><th>Nachname   </th><th>Geburtstag   </th><th>PLZ   </th><th>Ort   </th></tr>";
-                        //                // output data of each row
-                        //                while ($row = $results->fetch_assoc()) {
-                        //                    echo "<tr><td>" . $row["fname"] . "</td><td>" . $row["lname"] . "</td><td>" . $row["birthdate"]  . "</td><td>"  . $row["plz"]  ."</td><td>"  . $row["ort"]  ."</td></tr>";
-                        //                }
-                        //                echo "</table>";
-                        //            } else {
-                        //                echo "0 results";
-                        //            }
 
 
                         ?>

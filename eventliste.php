@@ -1,5 +1,6 @@
 <?php
 include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
+
 <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Anstehende Events</a></li>
@@ -23,6 +24,10 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
             <br>
             <?php
 
+            $dbcon = mysqli_connect('127.0.0.1','root','','rabenbund');
+            mysqli_query($dbcon, "SET NAMES 'utf8'");
+            mysqli_select_db($dbcon, 'rabenbund');
+
 
             include(__DIR__.'/database/dbNewConnection.php');
 
@@ -33,13 +38,14 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 
             $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
 
-
+            mysqli_close($dbcon);
 
             ?>
 
             <!DOCTYPE html>
             <html lang="de">
             <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 <title></title>
             </head>
 
@@ -56,41 +62,51 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 
                         <?php
 
+
+//
+//                        $dbcon = mysqli_connect('127.0.0.1','root','','rabenbund');
+//                        mysqli_query($dbcon, "SET NAMES 'utf8'");
+//                        mysqli_select_db($dbcon, 'rabenbund');
+
+
                         require_once ('database/dbNewConnection.php');
+
                         $db_link = mysqli_connect('127.0.0.1', 'root','','rabenbund');
 
                         $db_erg = mysqli_query( $db_link, $query );
+
+
+
                         if ( ! $db_erg )
                         {
                             die('Ungültige Abfrage: ' . mysqli_error(mysqli_connect('127.0.0.1','root','','rabenbund')));
                         }
 
                         echo '<table border="1">';
-                        while ($zeile = mysqli_fetch_array( $db_erg, 1))
-                        {
-                            echo "<tr>";
-                            echo "<td>". $zeile['eventname'] . "</td>";
-                            echo "<td>". $zeile['tage'] . "</td>";
-                            echo "<td>". $zeile['zelt'] . "</td>";
-                            echo "<td>". $zeile['sonstiges'] . "</td>";
-                            echo "</tr>";
+
+
+
+                        if($results->num_rows>0) {
+                            echo "<table border><tr><th>Eventname   </th><th>Tage   </th><th>Zelt   </th><th>Sonstiges   </th></tr>";
+
+                            while ($zeile = mysqli_fetch_array($db_erg, 1)) {
+
+                                echo "<tr>";
+                                echo "<td>" . $zeile['eventname'] . "</td>";
+                                echo "<td>" . $zeile['tage'] . "</td>";
+                                echo "<td>" . $zeile['zelt'] . "</td>";
+                                echo "<td>" . $zeile['sonstiges'] . "</td>";
+                                echo "</tr>";
+                            }
+
+                            echo "</table>";
+                        }else{
+                            echo "0 results";
                         }
-                        echo "</table>";
 
                         mysqli_free_result( $db_erg );
 
-
-
-                        //            if ($results->num_rows > 0) {
-                        //                echo "<table border =1><tr><th>Eventname   </th><th>Tage   </th><th>Zelt   </th><th>Sonstiges   </th></tr>";
-                        //                // output data of each row
-                        //                while ($row = $results->fetch_assoc()) {
-                        //                    echo "<tr><td>" . $row["eventname"] . "</td><td>" . $row["tage"] . "</td><td>" . $row["zelt"]  . "</td><td>" . $row["sonstiges"]  . "</td></tr>";
-                        //                }
-                        //                echo "</table>";
-                        //            } else {
-                        //                echo "0 results";
-                        //            }
+                        //mysqli_close($dbcon);
 
 
                         ?>

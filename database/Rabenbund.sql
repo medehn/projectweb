@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 24. Jun 2017 um 16:44
+-- Erstellungszeit: 30. Jun 2017 um 19:41
 -- Server-Version: 10.1.21-MariaDB
 -- PHP-Version: 5.6.30
 
@@ -80,13 +80,22 @@ CREATE TABLE `events` (
   `eventname` varchar(50) NOT NULL,
   `email` varchar(30) NOT NULL,
   `tage` int(10) UNSIGNED NOT NULL,
-  `zelt` varchar(10) NOT NULL,
+  `zelt` varchar(100) NOT NULL,
   `car` varchar(10) NOT NULL,
   `carseats` int(10) UNSIGNED NOT NULL,
   `besucherid` int(10) UNSIGNED NOT NULL,
   `besuchername` varchar(100) NOT NULL,
   `sonstiges` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Daten für Tabelle `events`
+--
+
+INSERT INTO `events` (`eventid`, `eventname`, `email`, `tage`, `zelt`, `car`, `carseats`, `besucherid`, `besuchername`, `sonstiges`) VALUES
+(1, '\"Der Grosse Ritter\"', '', 2, '3 große, 2 kleine, 5 Stände', '', 0, 0, '', 'Informationen zum Event'),
+(2, '\"Leben wie im Mittelalter\"', '', 3, '5 große, 4 kleine, 10 Stände', '', 0, 0, '', 'Informationen zum Event'),
+(3, '\"Drachenwanderung\"', '', 2, 'Bitte selber mitnehmen!', '', 0, 0, '', 'Informationen zum Event');
 
 --
 -- Indizes der exportierten Tabellen
@@ -130,7 +139,7 @@ ALTER TABLE `besucher`
 -- AUTO_INCREMENT für Tabelle `events`
 --
 ALTER TABLE `events`
-  MODIFY `eventid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `eventid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Constraints der exportierten Tabellen
 --
@@ -145,5 +154,3 @@ ALTER TABLE `besucher`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
