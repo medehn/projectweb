@@ -1,9 +1,8 @@
 <?php
 
 
-session_start();
-if (isset($_SESSION["username"])) {
-include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
+
+include('php'.DIRECTORY_SEPARATOR.'nav_login.php'); ?>
 
 
 
@@ -39,14 +38,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 
 include('php'.DIRECTORY_SEPARATOR.'footer.php');
 
-} else {
-    ?>
-
-
-    <?php
-    //header( "Location: index.php");
-    echo "Loge dich ein";
-}
 
 ?>
 
