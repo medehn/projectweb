@@ -71,6 +71,7 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
                 <h1>Profil von <?php echo $row['fname'], "&nbsp", $row['lname']; ?></h1> <!-- Name aus Datenbank geholt-->
                 <br>
                 <p>Name: <?php echo $row['username']; ?> </p> <!-- Username aus Datenbank geholt-->
+                        <br>
                 <p>Funktion: <?php echo $row['funktion']; ?> </p> <!-- Funktion aus Datenbank geholt-->
                 <br>
                 <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
