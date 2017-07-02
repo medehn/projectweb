@@ -36,7 +36,7 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
         <form method="get" action="php/detailsProfile.php">
             <div class="col-xs-6 text-left">
 
-
+    <!-- Dieser Teil hat nicht funktioniert wie wir es wollten, daher haben wir es nicht weiter ausgebaut in detailsProfile.php-->
                 <?php if($editMode): ?>
                     <h1><p> Profil von: <input type="text" name="username" value="<?php echo $row['fname'], "&nbsp", $row['lname']; ?>">
                 <?php else:  ?>

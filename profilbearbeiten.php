@@ -1,3 +1,5 @@
+<!-- Die Datei funktioniert nicht zu 100%, zusammen mit profilupdate. Das Update selber wird nicht durchgeführt & das Array wirft einen Fehler-->
+
 <?php
 session_start();
 if (isset($_SESSION["username"])) {
