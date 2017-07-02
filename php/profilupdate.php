@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+//Hier werden einzelne Bereiche des Profils geupdated
 var_dump($_SESSION);
 
 include(__DIR__ . '../database/dbNewConnection.php');
@@ -16,7 +17,6 @@ $interests = $_SESSION['interests'];
 
 $queryupdate =  "UPDATE `Benutzer` SET `funktion`='.$funktion.', `skills`='.$skills.', `interests`='.$interests.' 
 WHERE `username`='.$username.'";
-
 
 
 
