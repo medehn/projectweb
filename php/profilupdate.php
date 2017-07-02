@@ -12,14 +12,9 @@ $funktion = $_SESSION['funktion'];
 $skills = $_SESSION['skills'];
 $interests = $_SESSION['interests'];
 
-$queryupdate = "UPDATE `Benutzer`  
-              SET  
-                   
-                  `funktion`='$funktion', 
-                  `skills`='$skills', 
-                  `interests`='$interests', 
-              WHERE  
-                  `username`='$username'";
+$queryupdate =  "UPDATE `Benutzer` SET `funktion`=$funktion, `skills`=$skills, `interests`=$interests, 
+WHERE username=$username";
+
 
 $results1 = mysqli_query($connection, $queryupdate);
 
