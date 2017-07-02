@@ -5,7 +5,7 @@ if (isset($_SESSION["username"])) {
     include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
 
-    include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
+    include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
 
 var_dump($_POST);
 
