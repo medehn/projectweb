@@ -7,7 +7,9 @@ include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
 
 include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
-<ol class="breadcrumb">
+
+
+    <ol class="breadcrumb">
     <li class="active">Home</li>
     <li><a href="#">Mitglieder</a></li>
 </ol>

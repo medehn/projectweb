@@ -1,11 +1,20 @@
 <?php
 session_start();
 if (isset($_SESSION["username"])) {
-include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
+
+    include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
+
+
+    include('php'.DIRECTORY_SEPARATOR.'nav_logout.php'); ?>
 
 var_dump($_POST);
 
-include './database/dbNewConnection.php';
+    include(__DIR__.'/database/dbNewConnection.php');
+
+    $query = "SELECT fname,lname,username, funktion, skills, interests
+          FROM benutzer;";
+
+    $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
 
 
 $fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8') ;
@@ -21,12 +30,9 @@ $interests = $_POST['interests'];
         echo "FName geht nix";
     }
 
-    $result = mysqli_query($connection,
-        "SELECT (userid,fname,lname,username,funktion,skills,interests)  FROM 'Benutzer'
-          VALUES(NULL,'".$fname."', '".$lname."','".$username."','".$funktion ."','".$skills ."','".$interests."');");
 
     //Update bitte ergänzen
-    
+
 
     ?>
 
