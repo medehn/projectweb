@@ -13,12 +13,12 @@ if (isset($_SESSION["username"])) {
 
     include(__DIR__ . '/database/dbNewConnection.php');
 
-    $fname = htmlentities($_SESSION['fname'], ENT_QUOTES, 'utf-8');
+   /* $fname = htmlentities($_SESSION['fname'], ENT_QUOTES, 'utf-8');
     $lname = $_SESSION['lname'];
     $username = $_SESSION['username'];
     $funktion = $_SESSION['funktion'];
     $skills = $_SESSION['skills'];
-    $interests = $_SESSION['interests'];
+    $interests = $_SESSION['interests'];*/
 
     $query = "SELECT fname,lname,username, funktion, skills, interests
           FROM `Benutzer`;";
@@ -30,20 +30,6 @@ if (isset($_SESSION["username"])) {
     } else {
         echo "FName geht nix";
     }
-
-    $queryupdate = "UPDATE `Benutzer`  
-              SET  
-                   
-                  `funktion`='$funktion', 
-                  `skills`='$skills', 
-                  `interests`='$interests', 
-              WHERE  
-                  `username`='$username'";
-
-                        $results1 = mysqli_query($connection, $queryupdate);
-
-
-    //Update bitte ergänzen
 
 
     ?>
@@ -96,9 +82,11 @@ if (isset($_SESSION["username"])) {
                     <input type="text" placeholder="Änderungen eingeben" name="interessen" class="form-control">
                 </div>
                 <br>
+                <form method="get" action="php/profilupdate.php" >
                 <button type="submit" name="modify" class="btn btn-labeled btn-success">
-                    <span class="btn-label"> <a href="profile.php"> </span>Ändern
+                    <span class="btn-label"> </span>Ändern
                 </button>
+                </form>
 
                 <!-- Die Encoding-Art enctype MUSS wie dargestellt angegeben werden -->
                 <form enctype="multipart/form-data" action="upload.php" method="POST">
