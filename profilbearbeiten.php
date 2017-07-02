@@ -25,11 +25,6 @@ if (isset($_SESSION["username"])) {
 
     $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 189a67616dfdf1e7472db2cd2faf72c29b4e2f91
     if (isset($fname)) {
         echo "FName geht";
     } else {
@@ -102,7 +97,7 @@ if (isset($_SESSION["username"])) {
                 </div>
                 <br>
                 <button type="submit" name="modify" class="btn btn-labeled btn-success">
-                    <span class="btn-label"> </span>Ändern
+                    <span class="btn-label"> <a href="profile.php"> </span>Ändern
                 </button>
 
                 <!-- Die Encoding-Art enctype MUSS wie dargestellt angegeben werden -->
