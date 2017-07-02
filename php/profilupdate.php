@@ -6,7 +6,7 @@ var_dump($_SESSION);
 
 include(__DIR__ . '../database/dbNewConnection.php');
 
-$results1 = mysqli_query($connection, $queryupdate);
+$results1 = mysqli_query($connection, $queryupdate)or die('Abfrage konnte nicht verarbeitet werden');
 
 $fname = htmlentities($_SESSION['fname'], ENT_QUOTES, 'utf-8');
 $lname = $_SESSION['lname'];
@@ -15,8 +15,13 @@ $funktion = $_SESSION['funktion'];
 $skills = $_SESSION['skills'];
 $interests = $_SESSION['interests'];
 
-$queryupdate =  "UPDATE `Benutzer` SET funktion='.$funktion.', skills='.$skills.', interests='.$interests.' 
-WHERE username='.$username.'";
+/*$query2= "INSERT into `Benutzer` (funktion, skills, interests)
+VALUES ('$funktion', '$skills', '$interests')";*/
+
+$queryupdate =  "UPDATE `Benutzer` SET funktion='$funktion', skills='$skills', interests='$interests'
+WHERE username='$username'";
+
+$row = mysqli_fetch_assoc($queryupdate);
 
 if (mysqli_query($conn, $queryupdate)) {
     echo "Record updated successfully";
@@ -24,7 +29,7 @@ if (mysqli_query($conn, $queryupdate)) {
     echo "Error updating record: " . mysqli_error($conn);
 }
 
-$row = mysqli_fetch_assoc($queryupdate);
+
 
 
 

@@ -4,13 +4,9 @@ if (isset($_SESSION["username"])) {
 
     include('php' . DIRECTORY_SEPARATOR . 'detailsProfile.php');
 
-
-
     include('php' . DIRECTORY_SEPARATOR . 'nav_logout.php');
 
-
     var_dump($_SESSION);
-
 
     include(__DIR__ . '/database/dbNewConnection.php');
 
@@ -31,8 +27,6 @@ if (isset($_SESSION["username"])) {
     } else {
         echo "FName geht nix";
     }
-
-
     ?>
 
     <ol class="breadcrumb">

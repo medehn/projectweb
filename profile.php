@@ -35,6 +35,39 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
 
         <form method="get" action="php/detailsProfile.php">
             <div class="col-xs-6 text-left">
+
+
+                <?php if($editMode): ?>
+                    <h1><p> Profil von: <input type="text" name="username" value="<?php echo $row['fname'], "&nbsp", $row['lname']; ?>">
+                <?php else:  ?>
+                    <h1>Profil von:  <?php echo $row['fname'], "&nbsp", $row['lname']; ?> </h1>
+                        <?php endif; ?>
+                        <br>
+                    <?php if ($editMode): ?>
+                    <p>Name: <input type="text" name="username" value="<?php echo $row['username']; ?>"> </p> <!-- Funktion aus Datenbank geholt-->
+                    <?php else:  ?>
+                    <p>Name: <?php echo $row['username']; ?> </p>
+                    <?php endif; ?>
+                    <br>
+                    <?php if ($editMode): ?>
+                    <p>Funktion: <input type="text" name="funktion" value="<?php echo $row['funktion']; ?>"> </p> <!-- Funktion aus Datenbank geholt-->
+                    <?php else:  ?>
+                    <p>Funktion: <?php echo $row['funktion']; ?> </p>
+                    <?php endif; ?>
+                    <br>
+                    <?php if ($editMode): ?>
+                    <p>Besondere Fähigkeiten: <input type="text" name="skills" value="<?php echo $row['skills']; ?>"> </p>
+                    <?php else: ?>
+                    <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
+                    <?php endif; ?>
+                    <br>
+                    <?php if ($editMode): ?>
+                    <p>Interessen: <input type="text" name="interests" value="<?php echo $row['interests']; ?>"> </p>
+                    <?php else: ?>
+                    <p>Interessen: <?php echo $row['interests']; ?> </p>
+                    <?php endif; ?>
+                    <br>
+
                 <h1>Profil von <?php echo $row['fname'], "&nbsp", $row['lname']; ?></h1> <!-- Name aus Datenbank geholt-->
                 <br>
                 <p>Name: <?php echo $row['username']; ?> </p> <!-- Username aus Datenbank geholt-->
