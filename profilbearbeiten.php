@@ -26,6 +26,10 @@ if (isset($_SESSION["username"])) {
     $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 189a67616dfdf1e7472db2cd2faf72c29b4e2f91
     if (isset($fname)) {
         echo "FName geht";
     } else {
