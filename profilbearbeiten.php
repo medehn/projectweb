@@ -25,17 +25,7 @@ if (isset($_SESSION["username"])) {
 
     $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
 
-<<<<<<< HEAD
 
-
-=======
-    $fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8');
-    $lname = $_POST['lname'];
-    $username = $_POST['username'];
-    $funktion = $_POST['funktion'];
-    $skills = $_POST['skills'];
-    $interests = $_POST['interests'];
->>>>>>> origin/master
 
     if (isset($fname)) {
         echo "FName geht";
