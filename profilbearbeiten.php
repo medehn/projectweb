@@ -5,28 +5,28 @@ if (isset($_SESSION["username"])) {
     include('php' . DIRECTORY_SEPARATOR . 'detailsProfile.php');
 
 
-<<<<<<< HEAD
-    include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
-=======
-    include('php' . DIRECTORY_SEPARATOR . 'nav_logout.php');
->>>>>>> d6f3c7c063f1be02add9324cc5fae8d3133f249f
 
-    var_dump($_POST);
+    include('php' . DIRECTORY_SEPARATOR . 'nav_logout.php');
+
+
+    var_dump($_SESSION);
 
     include(__DIR__ . '/database/dbNewConnection.php');
 
+    $fname = htmlentities($_SESSION['fname'], ENT_QUOTES, 'utf-8');
+    $lname = $_SESSION['lname'];
+    $username = $_SESSION['username'];
+    $funktion = $_SESSION['funktion'];
+    $skills = $_SESSION['skills'];
+    $interests = $_SESSION['interests'];
+
     $query = "SELECT fname,lname,username, funktion, skills, interests
-          FROM benutzer;";
+          FROM `Benutzer`;";
 
     $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
 
 
-    $fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8');
-    $lname = $_POST['lname'];
-    $username = $_POST['username'];
-    $funktion = $_POST['funktion'];
-    $skills = $_POST['skills'];
-    $interests = $_POST['interests'];
+
 
     if (isset($fname)) {
         echo "FName geht";
