@@ -1,12 +1,14 @@
 <?php
 session_start();
+if (isset($_SESSION["username"])) {
+    
 include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
 
 include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
 
 //hier wird geprüft ob der user schon eingelogt ist wenn nicht kommt er ans ende der Seite...
-if (isset($_SESSION["username"])) {
+
 
 ?>
 
