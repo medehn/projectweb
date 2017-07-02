@@ -20,4 +20,4 @@ WHERE `username`='.$username.'";
 
 
 
-header('location: ../profile.php');
+header('location: php/profile.php');

@@ -84,7 +84,7 @@ if (isset($_SESSION["username"])) {
                 <br>
                 <form method="get" action="php/profilupdate.php" >
                 <button type="submit" name="modify" class="btn btn-labeled btn-success">
-                    <span class="btn-label"> </span>Ändern
+                    <span class="btn-label"> <a href="profile.php"> </span>Ändern
                 </button>
                 </form>
 
