@@ -44,13 +44,14 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
                <br>
                 <p>Interessen: <?php echo $row['interests']; ?> </p>
                 <br>
+        </form>
                 <button type="submit" name="modify" class="btn btn-labeled btn-success">
-                    <span class="btn-label"></span>Bearbeiten
+                    <span class="btn-label"><a href="profilbearbeiten.php"></span>Bearbeiten
                 </button>
 
             </div>
 
-        </form>
+
     </div>
     <!-- Die Encoding-Art enctype MUSS wie dargestellt angegeben werden -->
     <form enctype="multipart/form-data" action="upload.php" method="POST">
