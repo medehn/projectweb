@@ -67,19 +67,8 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
                     <p>Interessen: <?php echo $row['interests']; ?> </p>
                     <?php endif; ?>
                     <br>
-
-                <h1>Profil von <?php echo $row['fname'], "&nbsp", $row['lname']; ?></h1> <!-- Name aus Datenbank geholt-->
-                <br>
-                <p>Name: <?php echo $row['username']; ?> </p> <!-- Username aus Datenbank geholt-->
-                        <br>
-                <p>Funktion: <?php echo $row['funktion']; ?> </p> <!-- Funktion aus Datenbank geholt-->
-                <br>
-                <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
-               <br>
-                <p>Interessen: <?php echo $row['interests']; ?> </p>
-                <br>
         </form>
-                <button type="submit" name="modify" class="btn btn-labeled btn-success">
+                <button type="submit" name="edit" class="btn btn-labeled btn-success">
                     <span class="btn-label"><a href="profilbearbeiten.php"></span>Bearbeiten
                 </button>
 
