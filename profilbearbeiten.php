@@ -5,11 +5,8 @@ if (isset($_SESSION["username"])) {
     include('php' . DIRECTORY_SEPARATOR . 'detailsProfile.php');
 
 
-<<<<<<< HEAD
-    include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
-=======
+
     include('php' . DIRECTORY_SEPARATOR . 'nav_logout.php');
->>>>>>> d6f3c7c063f1be02add9324cc5fae8d3133f249f
 
     var_dump($_POST);
 
@@ -19,7 +16,6 @@ if (isset($_SESSION["username"])) {
           FROM benutzer;";
 
     $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
-
 
     $fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8');
     $lname = $_POST['lname'];
@@ -33,6 +29,17 @@ if (isset($_SESSION["username"])) {
     } else {
         echo "FName geht nix";
     }
+
+    $queryupdate = "UPDATE `benutzer`  
+              SET  
+                   
+                  `funktion`='$funktion', 
+                  `skills`='$skills', 
+                  `interests`='$interests', 
+              WHERE  
+                  `username`='$username'";
+
+                        $results1 = mysqli_query($connection, $queryupdate);
 
 
     //Update bitte ergänzen
@@ -71,7 +78,6 @@ if (isset($_SESSION["username"])) {
                     <label>Name: <?php echo $row['username']; ?> </label>
                 </div>
 
-
                 <p>
                     <label>Funktion: <?php echo $row['funktion']; ?> </label>
                     <br>
@@ -90,7 +96,7 @@ if (isset($_SESSION["username"])) {
                 </div>
                 <br>
                 <button type="submit" name="modify" class="btn btn-labeled btn-success">
-                    <span class="btn-label"></span>Ändern
+                    <span class="btn-label"> </span>Ändern
                 </button>
 
                 <!-- Die Encoding-Art enctype MUSS wie dargestellt angegeben werden -->
