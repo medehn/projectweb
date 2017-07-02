@@ -86,6 +86,9 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
                         require_once ('database/dbNewConnection.php');
                         $db_link = mysqli_connect('127.0.0.1', 'root','','rabenbund');
 
+                        mysqli_select_db($db_link,'rabenbund');
+                        mysqli_query($db_link, "SET NAMES'utf8'");
+
                         $db_erg = mysqli_query( $db_link, $query );
                          if ( ! $db_erg )
                          {
@@ -115,6 +118,8 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
                         }
 
                          mysqli_free_result( $db_erg );
+
+                         mysqli_close($db_link);
 
 
                         ?>

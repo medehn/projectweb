@@ -24,10 +24,7 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
             <br>
             <?php
 
-            $dbcon = mysqli_connect('127.0.0.1','root','','rabenbund');
-            mysqli_query($dbcon, "SET NAMES 'utf8'");
-            mysqli_select_db($dbcon, 'rabenbund');
-
+            $db_link = mysqli_connect('127.0.0.1','root','','rabenbund');
 
             include(__DIR__.'/database/dbNewConnection.php');
 
@@ -37,8 +34,6 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 
 
             $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
-
-            mysqli_close($dbcon);
 
             ?>
 
@@ -89,6 +84,8 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
                         require_once ('database/dbNewConnection.php');
 
                         $db_link = mysqli_connect('127.0.0.1', 'root','','rabenbund');
+                        mysqli_select_db($db_link,'rabenbund');
+                        mysqli_query($db_link, "SET NAMES'utf8'");;
 
                         $db_erg = mysqli_query( $db_link, $query );
 
@@ -123,7 +120,7 @@ include('php'.DIRECTORY_SEPARATOR.'header.php')
 
                         mysqli_free_result( $db_erg );
 
-                        //mysqli_close($dbcon);
+                        mysqli_close($db_link);
 
 
                         ?>
