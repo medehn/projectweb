@@ -11,9 +11,10 @@ if (isset($_SESSION["username"])) {
 
     var_dump($_SESSION);
 
+
     include(__DIR__ . '/database/dbNewConnection.php');
 
-   /* $fname = htmlentities($_SESSION['fname'], ENT_QUOTES, 'utf-8');
+    /*$fname = htmlentities($_SESSION['fname'], ENT_QUOTES, 'utf-8');
     $lname = $_SESSION['lname'];
     $username = $_SESSION['username'];
     $funktion = $_SESSION['funktion'];
@@ -25,7 +26,7 @@ if (isset($_SESSION["username"])) {
 
     $results = mysqli_query($connection, $query) or die('Abfrage konnte nicht verarbeitet werden');
 
-    if (isset($fname)) {
+    if (isset($username)) {
         echo "FName geht";
     } else {
         echo "FName geht nix";
