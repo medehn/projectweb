@@ -5,7 +5,11 @@ if (isset($_SESSION["username"])) {
     include('php' . DIRECTORY_SEPARATOR . 'detailsProfile.php');
 
 
+<<<<<<< HEAD
+    include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
+=======
     include('php' . DIRECTORY_SEPARATOR . 'nav_logout.php');
+>>>>>>> d6f3c7c063f1be02add9324cc5fae8d3133f249f
 
     var_dump($_POST);
 
