@@ -35,36 +35,16 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
         <form method="get" action="php/detailsProfile.php">
             <div class="col-xs-6 text-left">
 
-    <!-- Dieser Teil hat nicht funktioniert wie wir es wollten, daher haben wir es nicht weiter ausgebaut in detailsProfile.php-->
-                <?php if($editMode): ?>
-                    <h1><p> Profil von: <input type="text" name="username" value="<?php echo $row['fname'], "&nbsp", $row['lname']; ?>">
-                <?php else:  ?>
+
                     <h1>Profil von:  <?php echo $row['fname'], "&nbsp", $row['lname']; ?> </h1>
-                        <?php endif; ?>
                         <br>
-                    <?php if ($editMode): ?>
-                    <p>Name: <input type="text" name="username" value="<?php echo $row['username']; ?>"> </p> <!-- Funktion aus Datenbank geholt-->
-                    <?php else:  ?>
                     <p>Name: <?php echo $row['username']; ?> </p>
-                    <?php endif; ?>
-                    <br>
-                    <?php if ($editMode): ?>
-                    <p>Funktion: <input type="text" name="funktion" value="<?php echo $row['funktion']; ?>"> </p> <!-- Funktion aus Datenbank geholt-->
-                    <?php else:  ?>
+                   <br>
                     <p>Funktion: <?php echo $row['funktion']; ?> </p>
-                    <?php endif; ?>
                     <br>
-                    <?php if ($editMode): ?>
-                    <p>Besondere Fähigkeiten: <input type="text" name="skills" value="<?php echo $row['skills']; ?>"> </p>
-                    <?php else: ?>
                     <p>Besondere Fähigkeiten: <?php echo $row['skills']; ?> </p>
-                    <?php endif; ?>
                     <br>
-                    <?php if ($editMode): ?>
-                    <p>Interessen: <input type="text" name="interests" value="<?php echo $row['interests']; ?>"> </p>
-                    <?php else: ?>
                     <p>Interessen: <?php echo $row['interests']; ?> </p>
-                    <?php endif; ?>
                     <br>
         </form>
                 <button type="submit" name="edit" class="btn btn-labeled btn-success">
