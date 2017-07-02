@@ -7,7 +7,6 @@ include('php'.DIRECTORY_SEPARATOR.'detailsProfile.php');
 
 include('php'.DIRECTORY_SEPARATOR.'nav_logout.php');
 
-//hier wird geprüft ob der user schon eingelogt ist wenn nicht kommt er ans ende der Seite...
 
 
 ?>
@@ -71,6 +70,7 @@ include('php'.DIRECTORY_SEPARATOR.'header.php');
                 <button type="submit" name="edit" class="btn btn-labeled btn-success">
                     <span class="btn-label"><a href="profilbearbeiten.php"></span>Bearbeiten
                 </button>
+        <!-- Bearbeiten, wirft Fehler mit Array-->
 
             </div>
 

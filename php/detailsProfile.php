@@ -1,3 +1,5 @@
+
+
 <?php
 
 //var_dump($_SESSION);
@@ -17,8 +19,10 @@ if(isset($_GET['editMode']) && $_GET['editMode'] == 'true') {
 }
 
 
-if(isset($_GET['editMode']) && $_GET['editMode'] == 'true' && !empty($_POST)) {
+/*Diese Funktion wird weggelassen, da es Fehlermeldungen gab & es nicht das bewirkt hat was wir wollten
+    außerdem haben wir versucht eine andere Methode anzuwengen, die Daten zu updaten
+ *
+ * if(isset($_GET['editMode']) && $_GET['editMode'] == 'true' && !empty($_POST)) {
 
-    //do whatever needs to be done - check if all fields that you require are set
-    //if everything is fine - save the values that have been sent to the database...
-}
+
+}*/

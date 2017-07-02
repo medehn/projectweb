@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-//Hier werden einzelne Bereiche des Profils geupdated
+//Hier werden einzelne Bereiche des Profils geupdated, was jedoch leider nicht klappt - da wahrscheinlich etwas an der Datenbankverbindung
+//nicht glatt läuft
 var_dump($_SESSION);
 
 include(__DIR__ . '../database/dbNewConnection.php');
