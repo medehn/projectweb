@@ -1,4 +1,5 @@
-<!-- Die Datei funktioniert nicht zu 100%, zusammen mit profilupdate. Das Update selber wird nicht durchgeführt & das Array wirft einen Fehler-->
+<!-- Die Datei funktioniert nicht zu 100%, zusammen mit profilupdate. Das Update selber wird nicht durchgeführt & das Array wirft leider
+einen Fehler, nach vielen Versuchen und Änderungen leider keine Fehlerbehebung von unserer Seite aus bis jetzt möglich-->
 
 <?php
 session_start();
