@@ -18,7 +18,14 @@ $interests = $_SESSION['interests'];
 $queryupdate =  "UPDATE `Benutzer` SET funktion='.$funktion.', skills='.$skills.', interests='.$interests.' 
 WHERE username='.$username.'";
 
+if (mysqli_query($conn, $queryupdate)) {
+    echo "Record updated successfully";
+} else {
+    echo "Error updating record: " . mysqli_error($conn);
+}
+
 $row = mysqli_fetch_assoc($queryupdate);
+
 
 
 header('location: php/profile.php');
