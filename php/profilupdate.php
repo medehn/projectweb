@@ -18,6 +18,7 @@ $interests = $_SESSION['interests'];
 $queryupdate =  "UPDATE `Benutzer` SET funktion='.$funktion.', skills='.$skills.', interests='.$interests.' 
 WHERE username='.$username.'";
 
+$row = mysqli_fetch_assoc($queryupdate);
 
 
 header('location: php/profile.php');
