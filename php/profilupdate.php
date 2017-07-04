@@ -1,7 +1,9 @@
 <?php
+//session_start();
 
 //Hier werden einzelne Bereiche des Profils geupdated, was jedoch leider nicht klappt - da wahrscheinlich etwas an der Datenbankverbindung
 //nicht glatt läuft
+//var_dump($_SESSION);
 
 include('../database/dbNewConnection.php');
 
@@ -13,12 +15,6 @@ $username = $_POST['username'];
 $funktion = $_POST['funktion'];
 $skills = $_POST['skills'];
 $interests = $_POST['interests'];
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> a109f7ac98cde7536a36df807e65361e0a59d301
 
 
 $result = mysqli_query($connection, "UPDATE `Benutzer` SET funktion='$funktion', skills='$skills', interests='$interests'
