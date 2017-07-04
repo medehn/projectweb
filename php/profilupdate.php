@@ -1,11 +1,11 @@
 <?php
-session_start();
+//session_start();
 
 //Hier werden einzelne Bereiche des Profils geupdated, was jedoch leider nicht klappt - da wahrscheinlich etwas an der Datenbankverbindung
 //nicht glatt läuft
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
-include(__DIR__ . '../database/dbNewConnection.php');
+include('../database/dbNewConnection.php');
 
 $results1 = mysqli_query($connection, $queryupdate)or die('Abfrage konnte nicht verarbeitet werden');
 
@@ -19,8 +19,10 @@ $interests = $_SESSION['interests'];
 /*$query2= "INSERT into `Benutzer` (funktion, skills, interests)
 VALUES ('$funktion', '$skills', '$interests')";*/
 
-$queryupdate =  "UPDATE `Benutzer` SET funktion='$funktion', skills='$skills', interests='$interests'
-WHERE username='$username'";
+$queryupdate =  "UPDATE `Benutzer` SET funktion='.$funktion.', skills='.$skills.', interests='.$interests.'
+WHERE username='.$username.'";
+
+
 
 $row = mysqli_fetch_assoc($queryupdate);
 
