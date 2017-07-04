@@ -5,33 +5,31 @@ session_start();
 //nicht glatt läuft
 var_dump($_SESSION);
 
-include(__DIR__ . '../database/dbNewConnection.php');
+include('../database/dbNewConnection.php');
 
-$results1 = mysqli_query($connection, $queryupdate)or die('Abfrage konnte nicht verarbeitet werden');
 
-$fname = htmlentities($_SESSION['fname'], ENT_QUOTES, 'utf-8');
-$lname = $_SESSION['lname'];
-$username = $_SESSION['username'];
-$funktion = $_SESSION['funktion'];
-$skills = $_SESSION['skills'];
-$interests = $_SESSION['interests'];
 
-/*$query2= "INSERT into `Benutzer` (funktion, skills, interests)
-VALUES ('$funktion', '$skills', '$interests')";*/
+$fname = htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8');
+$lname = $_POST['lname'];
+$username = $_POST['username'];
+$funktion = $_POST['funktion'];
+$skills = $_POST['skills'];
+$interests = $_POST['interests'];
 
-$queryupdate =  "UPDATE `Benutzer` SET funktion='$funktion', skills='$skills', interests='$interests'
-WHERE username='$username'";
 
-$row = mysqli_fetch_assoc($queryupdate);
 
-if (mysqli_query($conn, $queryupdate)) {
+$result = mysqli_query($connection, "UPDATE `Benutzer` SET funktion='$funktion', skills='$skills', interests='$interests'
+WHERE username='$username'");
+
+
+$row = mysqli_fetch_assoc($result);
+
+/*if (mysqli_query($connection, $result)) {
     echo "Record updated successfully";
 } else {
-    echo "Error updating record: " . mysqli_error($conn);
-}
+    echo "Error updating record: " . mysqli_error($connection);
+}*/
 
 
 
-
-
-header('location: php/profile.php');
+header('location: ../profile.php');

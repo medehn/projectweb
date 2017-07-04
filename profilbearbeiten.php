@@ -62,7 +62,7 @@ if (isset($_SESSION["username"])) {
 
                     <label>Name: <?php echo $row['username']; ?> </label>
                 </div>
-
+                <form method="post" action="php/profilupdate.php" >
                 <p>
                     <label>Funktion: <?php echo $row['funktion']; ?> </label>
                     <br>
@@ -80,7 +80,7 @@ if (isset($_SESSION["username"])) {
                     <input type="text" placeholder="Änderungen eingeben" name="interessen" class="form-control">
                 </div>
                 <br>
-                <form method="get" action="php/profilupdate.php" >
+
                 <button type="submit" name="modify" class="btn btn-labeled btn-success">
                     <span class="btn-label"> </span>Ändern
                 </button>
